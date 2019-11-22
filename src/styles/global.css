@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+    font-size: 3.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+}
+
+li{
+    padding: 5px;
+}
