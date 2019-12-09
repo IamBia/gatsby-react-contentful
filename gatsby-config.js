@@ -1,8 +1,6 @@
-const dotenv = require('dotenv')
-
-if(process.env.NODE_ENV !== 'production') {
-  dotenv.config()
-}
+require('dotenv').config({
+  path: `.env.development`,
+});
 
 module.exports = {
   siteMetadata: {
@@ -14,6 +12,7 @@ module.exports = {
   
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
+    `@contentful/gatsby-transformer-contentful-richtext`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,9 +37,10 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceID: 'i0m4cyt7hwly',
-        accessToken: process.env.CONTENTFUL_ACSESS_TOKEN
+        spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
+        accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
       }
-    }
+    },
+    `@contentful/gatsby-transformer-contentful-richtext`,
   ],
 }
