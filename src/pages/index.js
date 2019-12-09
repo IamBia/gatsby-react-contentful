@@ -1,6 +1,4 @@
 import React from "react"
-
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlogPost from '../components/blogPost'
@@ -18,28 +16,8 @@ const blogData = [
     description: "this is a description too",
     image: "https://unsplash.com/photos/npxXWgQ33ZQ",
     id: "second-blog-post",
-  },
-]
-const StoryblokClient = require("storyblok-js-client")
+  }]
 
-// init with access token
-const Storyblok = new StoryblokClient({
-  accessToken: "MPE9vDmQQnbfWChidCe6owtt",
-  cache: {
-    clear: "auto",
-    type: "memory",
-  },
-})
-
-Storyblok.get("cdn/stories", {
-  token: "MPE9vDmQQnbfWChidCe6owtt",
-})
-  .then(response => {
-    console.log(response)
-  })
-  .catch(error => {
-    console.log(error)
-  })
 
 const IndexPage = () => (
   
