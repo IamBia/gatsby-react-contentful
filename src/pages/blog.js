@@ -1,13 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 const blog = ({data}) => {
 
 const postContent = data.allContentfulPost.edges;
 
   return (
-    <div className="flex flex-wrap">
-      <div className="col">
+    <div className="container">
+    <div className="d-flex row">
+    
       { postContent.map(({ node: post }) => 
       
           <div className="col w-6/12" key="post.id">
@@ -24,7 +25,8 @@ const postContent = data.allContentfulPost.edges;
               }
           </div>
       )}
-        </div>
+     
+    </div>
     </div>
   )
   }
