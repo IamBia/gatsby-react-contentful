@@ -39,6 +39,7 @@ query pageQuery{
       node{
       title
       author
+      slug
       subtitle
       id
       image{
