@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const blogPost = ({data}) => {
+const blogPost = ({ data }) => {
 
 const { title, author, image, subtitle, slug, post } = data.contentfulBlogPost.edges;
 

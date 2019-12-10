@@ -8,17 +8,17 @@ const postContent = data.allContentfulPost.edges;
   return (
     <div className="flex flex-wrap">
       <div className="col">
-      { postContent.map((info) => 
+      { postContent.map(({ node: post }) => 
       
-          <div className="col w-6/12" key="info.id">
+          <div className="col w-6/12" key="post.id">
             {
-              <Link to={info.slug}>
+              <Link to={`/blog/${post.slug}`}>
               <article>
-                <img src={info.image} alt=""></img>
-                <h2>{info.title}</h2>
-                <p>{info.subtitle}</p>
-                <p>{info.author}</p>
-                <div dangerouslySetInnerHTML={{__html: info.content.childContentfulRichtext.html}}></div>
+                <img src={post.image} alt=""></img>
+                <h2>{post.title}</h2>
+                <p>{post.subtitle}</p>
+                <p>{post.author}</p>
+                <div dangerouslySetInnerHTML={{__html: post.content.childContentfulRichText.html}}></div>
               </article>
             </Link>    
               }
@@ -30,10 +30,11 @@ const postContent = data.allContentfulPost.edges;
   }
 export default blog
 
-export const pageQuery = graphql`
-query($slug: String!) {
-  
-  contentfulPost(slug: { eq: $slug }) {
+export const query = graphql`
+query pageQuery{
+  allContentfulPost {
+    edges{
+      node{
       title
       author
       subtitle
@@ -43,6 +44,8 @@ query($slug: String!) {
           html
         }
       }
+    }
+  }
     }
   }
   `;
