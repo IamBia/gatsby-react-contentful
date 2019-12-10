@@ -14,7 +14,7 @@ const postContent = data.allContentfulPost.edges;
             {
               <Link to={`/blog/${post.slug}`}>
               <article>
-                <img src={post.image} alt=""></img>
+                <img src={post.image.fluid.src} alt=""></img>
                 <h2>{post.title}</h2>
                 <p>{post.subtitle}</p>
                 <p>{post.author}</p>
@@ -39,6 +39,11 @@ query pageQuery{
       author
       subtitle
       id
+      image{
+        fluid{
+          src
+        }
+      }
       content{
         childContentfulRichText{
           html
