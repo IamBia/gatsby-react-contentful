@@ -1,41 +1,50 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const blogPost = (data) => {
+const blog = ({data}) => {
 
-const { title, author, image, subtitle, slug, post } = data.allContentfulPost.edges.node;
+const postContent = data.allContentfulPost.edges;
 
   return (
     <div className="flex flex-wrap">
       <div className="col">
-        <Link to={slug}>
-          <article>
-            <img src={image} alt=""></img>
-            <h2>{title}</h2>
-            <p>{subtitle}</p>
-            <p>{author}</p>
-            <div dangerouslySetInnerHTML={{__html: post.content.childContentfulRichtext.html}}></div>
-          </article>
-        </Link>
-      </div>
+      { postContent.map((info) => 
+      
+          <div className="col w-6/12" key="info.id">
+            {
+              <Link to={info.slug}>
+              <article>
+                <img src={info.image} alt=""></img>
+                <h2>{info.title}</h2>
+                <p>{info.subtitle}</p>
+                <p>{info.author}</p>
+                <div dangerouslySetInnerHTML={{__html: info.content.childContentfulRichtext.html}}></div>
+              </article>
+            </Link>    
+              }
+          </div>
+      )}
+        </div>
     </div>
   )
   }
-export default blogPost
+export default blog
 
 export const pageQuery = graphql`
-    query ($slug: String!){
+query($slug: String!) {
   
-    contentfulPost(slug: {eq:$slug }){
+  contentfulPost(slug: { eq: $slug }) {
       title
       author
       subtitle
+      id
       content{
         childContentfulRichText{
           html
         }
       }
-    
     }
   }
-  `
+  `;
+
+  

@@ -8,6 +8,7 @@
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
     "@contentful/rich-text-html-renderer": "^13.4.0",
     "contentful": "^7.10.0",
+    "contentful-export": "^7.7.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",

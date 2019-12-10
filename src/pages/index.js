@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import BlogPost from '../components/blogPost'
+
 
 
 const blogData = [
@@ -26,7 +26,7 @@ const IndexPage = () => (
     <div className="intro flex flex-wrap">
       <div className="col w-12/12">
         <h1>Hellow World!</h1>
-        <p>Hi, I am Bia, a fullstack developer living the life</p>
+        <p>Hi, I am Bia</p>
       </div>
     </div>
     <div className="about py-5">
@@ -53,12 +53,12 @@ const IndexPage = () => (
 
           { blogData.map((info) => 
           <div className="col w-6/12">
-            <BlogPost
+            {/* <BlogPost
               title={info.title}
               description={info.description}
               image={info.image}            
               key={info.id}
-            /> 
+            />  */}
           </div>
           )}
           </div>
