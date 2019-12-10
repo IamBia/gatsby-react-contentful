@@ -16,7 +16,7 @@ export default class HTML extends React.Component {
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           />
-          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito:400,600,700&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,800,900|Bebas+Neue&display=swap" rel="stylesheet"/>
           <script src="https://kit.fontawesome.com/ecad5391d1.js" crossorigin="anonymous"></script>
         </head>
         <body >

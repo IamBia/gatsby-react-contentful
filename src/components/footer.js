@@ -2,17 +2,19 @@ import React from "react"
 
 const footer = () => {
   const footer = {
-    height: "30vh",
-    backgroundColor: "#f0f0f0",
+    height: "25vh",
+    backgroundColor: "#1e2021",
+    color: '#fff'
   }
 
   return (
     <footer style={footer}>
       <div className="container ">
-        <div className="flex flex-row py-5 mt-5">
-          <div className="flex flex-col col w-12/12">
-            <p className="self-center">Connect with me</p>
-            <ul className="flex self-center">
+        <div className="row py-4">
+          <div className="col-12">
+          <div className="d-flex flex-column align-items-center justify-content-center">
+            <p className="align-items-center">Connect with me</p>
+            <ul className="d-flex align-items-center ">
               <li>
                 <a href="https://www.instagram.com/bia.dev/">
                   <i className="fab fa-instagram fa-2x"></i>
@@ -30,10 +32,11 @@ const footer = () => {
               </li>
             </ul>
           </div>
+          </div>
         </div>
-        <div className="flex flex-wrap">
-          <div className="col w-12/12 text-center">
-            <p>
+        <div className="row">
+          <div className="col-12 text-center">
+            <p className="py-3">
               This website is created with love by{" "}
               <a href="https://instagram.com/bia.dev">@bia.dev</a>
             </p>

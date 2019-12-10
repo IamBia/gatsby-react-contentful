@@ -11,15 +11,15 @@ const postContent = data.allContentfulPost.edges;
     
       { postContent.map(({ node: post }) => 
       
-          <div className="col w-6/12" key="post.id">
+          <div className="col-4" key="post.id">
             {
               <Link to={`/blog/${post.slug}`}>
               <article>
                 <img src={post.image.fluid.src} alt=""></img>
                 <h2>{post.title}</h2>
                 <p>{post.subtitle}</p>
-                <p>{post.author}</p>
-                <div dangerouslySetInnerHTML={{__html: post.content.childContentfulRichText.html}}></div>
+                <p className="author uppercase">Author: {post.author}</p>
+                {/* <div dangerouslySetInnerHTML={{__html: post.content.childContentfulRichText.html}}></div> */}
               </article>
             </Link>    
               }

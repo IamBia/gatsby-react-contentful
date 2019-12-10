@@ -6,10 +6,10 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <nav className="flex items-center justify-between flex-wrap py-6">
+    <nav className="justify-content-center justify-content-between row py-6">
       <div className="w-3/12">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
-            <Link to="/" className="brand text-black">
+            <Link to="/" className="brand text-black self-end">
               Bia DEV
             </Link>
         </div>
@@ -30,7 +30,7 @@ function Header({ siteTitle }) {
             </svg>
           </button>
         </div>
-        <div
+        <ul
           className={`${
             isExpanded ? `block` : `hidden`
           } w-full flex flex-grow lg:flex lg:items-center lg:w-auto`}
@@ -39,25 +39,25 @@ function Header({ siteTitle }) {
             <Link
               to={`/`}
               href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-black mr-4"
+              className="li block mt-4 lg:inline-block lg:mt-0  mr-4"
             >
               Home
             </Link>
             <Link
               to={`/blog/`}
               href="#responsive-header"
-              className="block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-black mr-4"
+              className="li block mt-4 lg:inline-block lg:mt-0  mr-4"
             >
               Blog
             </Link>
             <Link
               to={`/projects/`}
-              className="block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-black mr-4"
+              className="li block mt-4 lg:inline-block lg:mt-0  mr-4"
             >
               Projects
             </Link>
           </div>
-        </div>
+        </ul>
       </div>
     </nav>
   )

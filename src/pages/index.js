@@ -2,66 +2,49 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
-
-const blogData = [
-  {
-    title: "This is a title",
-    description: "this is a description",
-    image: "https://unsplash.com/photos/B_x6zSxF2rw",
-    id: "first-blog-post",
-  },
-  {
-    title: "Second blog post",
-    description: "this is a description too",
-    image: "https://unsplash.com/photos/npxXWgQ33ZQ",
-    id: "second-blog-post",
-  }]
-
-
 const IndexPage = () => (
   
   <Layout>
     <SEO title="Home" />
-    <div className="intro flex flex-wrap">
-      <div className="col w-12/12">
-        <h1>Hellow World!</h1>
-        <p>Hi, I am Bia</p>
+    <div className="intro row">
+      <div className="col-12 text-center uppercase">
+        <h1>Bia dot dev</h1>
+        <p>Fullstack Developer</p>
       </div>
     </div>
+
+    {/* <div className="intro mt-5">
+        <div className="row">
+          <div className="col-12 text-center">
+              <p>Hey you! How cool that you are here! Welcome to my blog.</p>
+          </div>
+        </div>
+    </div> */}
+
     <div className="about py-5">
-      <div className="flex flex-wrap">
-        <div className="col w-6/12">
-          <h2>About me</h2>
+      <div className="row">
+        <div className="col-12">
+          <h2>About Bia</h2>
           <p>
-            Front-end developer, mother, Brazilian and always curious to learn
-            more. I've always been passionate about technology and since 2016, I
-            spend my time learning more and more code.
+            __ Bia is a fullstack developer currently learning and coding the MERN stack.<br/>
+            ___ Also, I have an account on Instagram where I share my daily life not only as developer, <br/>
+            ____ but also as a mother, student, imigrant and person.
+          </p><br/>
+          <p>
+            _____ Besides Instagram, I also have a channel on<br/>
+            ______ YouTube, where I share knowlogy and <br/>
+            _______ experiences of the daily life as a developer.
+          </p><br/>
+          <p>
+            _______ I was born in Brazil and I live 4 years in the Netherlands.<br/>
+            ______ I work for a company, study Communication and Design and<br/>
+            _____ I am a mother of one boy.
+          </p><br/>
+          <p>
+            ____ If you want to know more about me, <br/>
+            ___ connect with me on Instagram,<br/>
+            __ Twitter, Youtube or LinkedIn.
           </p>
-        </div>
-      </div>
-    </div>
-
-    <div className="Blog">
-      <div className="flex-wrap flex">
-        <div className="col w-12/12 ">
-        <div className="text-center my-5">
-        <h2>Latest Posts</h2>
-        </div>
-      
-          <div className="flex flex-wrap">
-
-          { blogData.map((info) => 
-          <div className="col w-6/12">
-            {/* <BlogPost
-              title={info.title}
-              description={info.description}
-              image={info.image}            
-              key={info.id}
-            />  */}
-          </div>
-          )}
-          </div>
         </div>
       </div>
     </div>
