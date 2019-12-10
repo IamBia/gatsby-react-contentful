@@ -3,7 +3,7 @@ import React from "react"
 
 const blogPost = ({ data }) => {
 
-const { title, author, image, subtitle, post } = data.contentfulPost;
+const { title, author, image, subtitle, content } = data.contentfulPost;
 
   return (
     <div className="flex flex-wrap">
@@ -13,7 +13,7 @@ const { title, author, image, subtitle, post } = data.contentfulPost;
             <h2>{title}</h2>
             <p>{subtitle}</p>
             <p>{author}</p>
-            <div dangerouslySetInnerHTML={{__html: post}}></div>
+            <div dangerouslySetInnerHTML={{__html: content.childContentfulRichText.html}}></div>
           </article>
         
       </div>
