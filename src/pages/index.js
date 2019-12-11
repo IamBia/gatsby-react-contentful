@@ -35,8 +35,8 @@ const IndexPage = () => (
           </p><br/>
           <p>
             ____ If you want to know more about me, <br/>
-            ___ connect with me on Instagram,<br/>
-            __ <span className="pink">Twitter</span>, Youtube or LinkedIn.
+            ___ connect with me on Instagram, Github,<br/>
+            __ <span className="pink">Twitter</span>, Youtube, LinkedIn or Unsplash.
           </p>
         </div>
       </div>

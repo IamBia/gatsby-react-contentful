@@ -8,7 +8,7 @@ const postContent = data.allContentfulPost.edges;
 
   return (
     <div className="container">
-        <SEO title="404: Not found" />
+        <SEO title="Blog" />
     <h1 className="mb-5 text-center">Blog</h1>
 
     <div className="row">

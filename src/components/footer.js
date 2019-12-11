@@ -28,15 +28,21 @@ const footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/bianca-schuurman-62812151/">
-                     <span className="d-none d-lg-block">LinkedIn</span>
-                  <i className="fab fa-linkedin fa-2x d-block d-lg-none"></i>
-                </a>
-              </li>
-              <li>
                 <a href="https://www.youtube.com/channel/UCvn_yhz5Ar0ISKaWMtcOLLg">
                      <span className="d-none d-lg-block ">YouTube</span>
                   <i className="fab fa-youtube fa-2x d-block d-lg-none"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/IamBia">
+                     <span className="d-none d-lg-block">Github</span>
+                  <i className="fab fa-github fa-2x d-block d-lg-none"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/bianca-schuurman-62812151/">
+                     <span className="d-none d-lg-block">LinkedIn</span>
+                  <i className="fab fa-linkedin fa-2x d-block d-lg-none"></i>
                 </a>
               </li>
               <li>

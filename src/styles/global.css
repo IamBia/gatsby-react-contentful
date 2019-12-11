@@ -69,16 +69,32 @@ li{
     font-size: 12px;
 }
 
-.blog{
+.blog,{
     height: 350px;
-}
-
-.blog h1{
-    
 }
 
 .blog-posts h1{
     font-size: 3rem;
+}
+
+.portfolio{
+    height: 220px;
+}
+.source_btn{
+    background-color: #1e2021;
+    width: 25%;
+    padding: 10px 55px;
+    display: flex;
+    align-items: center;
+    color: #00adb5;
+    border: 1px solid #00adb5;
+    justify-content: center;
+}
+
+.source_btn:hover{
+    border: 1px solid #ff004d;
+    box-shadow: #000 2px 2px 2px;
+    transition: ease-in-out .3s;
 }
 
 footer ul li {
