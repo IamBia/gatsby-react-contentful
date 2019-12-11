@@ -1,0 +1,18 @@
+
+{
+    "title": "Gatsby Portuguese",
+    "description": "Descrição do projeto",
+    "author": "@bia.dev",
+    "hello": "Bem-vindo!",
+    "welcome": "Bem vindo a esse novo site Gatsby",
+    "title_page2": "Pagina dois",
+    "hello_page2": "Oi da página dois",
+    "go_page2": "Ir à página 2",
+    "welcome_page2": "Bem vindo a página 2",
+    "go_back": "Voltar a página ",
+    "footer_build": "Construído com",
+    "notfound": {
+        "header": "NADA ENCONTRADO",
+        "description": "Você não encontrou nada"
+    }
+}
