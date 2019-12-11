@@ -9,7 +9,7 @@ import logo from "../images/biadev-logo-black-small.jpeg"
     <nav className="justify-content-center justify-content-between row py-6">
       <div className="col-lg-3 d-flex align-items-end justify-content-center justify-content-lg-start">
         <div className=" align-items-center mr-6">
-            <Link to="/" className="brand text-black self-end">
+            <Link to="/" className="brand justify-content-center justify-content-lg-start d-flex">
               <img src={logo} className="img-fluid"></img>
             </Link>
         </div>
