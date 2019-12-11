@@ -7,6 +7,7 @@ h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #ff004d;
+    display: inline-block;
 }
 
 h1:hover{
@@ -51,11 +52,9 @@ p::selection{
 }
 
 .brand{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
 }
-
-
 
 li{
     padding: 5px;
@@ -65,6 +64,18 @@ li{
     font-size: 12px;
 }
 
-footer ul a {
-    margin: 0 10px;
+footer ul li {
+    margin: 0 15px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.credits{
+    font-size: 16px;
+}
+.blue{
+ color: #00adb5;
+}
+
+.pink{
+    color: #ff004d;
 }

@@ -11,7 +11,7 @@ const postContent = data.allContentfulPost.edges;
     
       { postContent.map(({ node: post }) => 
       
-          <div className="col-4" key="post.id">
+          <div className="col-12 col-lg-4 mb-5" key="post.id">
             {
               <Link to={`/blog/${post.slug}`}>
               <article>

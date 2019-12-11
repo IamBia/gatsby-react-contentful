@@ -23,9 +23,10 @@ const { title, author, image, subtitle, content } = data.contentfulPost;
             <p className="author mt-5">Author: {author}</p>
           </article>
           </div>
+          <Link to="/blog" className="uppercase mt-3 d-block d-ld-none">Back to Blog</Link>
       </div>
 
-      <Link to="/blog" className="uppercase mt-3">Back to Blog</Link>
+      <Link to="/blog" className="uppercase mt-3 d-none d-ld-block">Back to Blog</Link>
     </div>
     </div>
   )
