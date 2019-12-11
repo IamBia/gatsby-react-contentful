@@ -11,22 +11,22 @@ const { title, author, image, subtitle, content } = data.contentfulPost;
     <div className="container my-5">
     <div className="row">
       <div className="col-12">
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="blog-posts d-flex justify-content-center align-items-center">
           <article>
           
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <p>{subtitle}</p>
           
-            <img src={image.fluid.src} alt={title} className="my-3"></img>
+            <img src={image.fluid.src} alt={title} className="my-4"></img>
            
             <div dangerouslySetInnerHTML={{__html: content.childContentfulRichText.html}}></div>
             <p className="author mt-5">Author: {author}</p>
           </article>
           </div>
-          <Link to="/blog" className="uppercase mt-3 d-block d-ld-none">Back to Blog</Link>
+          <Link to="/blog" className="uppercase mt-3 d-block d-lg-none">Back to Blog</Link>
       </div>
 
-      <Link to="/blog" className="uppercase mt-3 d-none d-ld-block">Back to Blog</Link>
+      <Link to="/blog" className="uppercase mt-5 d-none d-lg-block">Back to Blog</Link>
     </div>
     </div>
   )
