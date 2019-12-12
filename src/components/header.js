@@ -2,11 +2,17 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/biadev-logo-black-small.jpeg"
+import Language from "../components/language";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
   const Header =() =>{
     return (
-    <nav className="justify-content-center justify-content-between row py-6">
+      <div className="header">
+      <div className="top-bar d-flex justify-content-end py-2">
+      <Language/>
+      </div>
+    <nav className="justify-content-center justify-content-between row pb-6">
       <div className="col-lg-3 d-flex align-items-end justify-content-center justify-content-lg-start">
         <div className=" align-items-center mr-6">
             <Link to="/" className="brand justify-content-center justify-content-lg-start d-flex">
@@ -41,6 +47,7 @@ import logo from "../images/biadev-logo-black-small.jpeg"
         </ul>
         </div>
     </nav>
+    </div>
   )
     }
 

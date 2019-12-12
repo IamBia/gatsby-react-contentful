@@ -54,5 +54,20 @@ module.exports = {
           redirect: true,
       },
   },
+  {
+    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    options: {
+      fonts: [
+        {
+          family: `Poppins`,
+          variants: [`400`, `600`, `700`, `800`, `900`]
+        },
+        {
+          family: `Bebas+Neue`,
+          subsets: [`latin`]
+        },
+      ],
+    },
+  },
   ],
 }

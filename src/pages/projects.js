@@ -1,12 +1,18 @@
 import React from "react"
 import  {graphql}  from "gatsby"
 import SEO from "../components/seo"
+import Header from "../components/header";
+
+
 
 
 const projects = ({data}) => {
     const portfolioContent = data.allContentfulPortfolio.edges;
     return (
+
+      
         <div className="container">
+        <Header/>
         <SEO title="Projects" />
         <h1 className="mb-5 text-center">Projects</h1>
         <div className="row">
@@ -27,6 +33,8 @@ const projects = ({data}) => {
         
         </div>
         </div>
+
+ 
         
         )
     }

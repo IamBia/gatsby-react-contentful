@@ -1,14 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
+import Layout from "../components/layout";
 
 const blog = ({data}) => {
 
 const postContent = data.allContentfulPost.edges;
 
   return (
-    <div className="container">
-        <SEO title="Blog" />
+    <Layout>
+
+    <SEO title="Blog" />
     <h1 className="mb-5 text-center">Blog</h1>
 
     <div className="row">
@@ -31,7 +33,8 @@ const postContent = data.allContentfulPost.edges;
       )}
      
     </div>
-    </div>
+
+    </Layout>
   )
   }
 export default blog

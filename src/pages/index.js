@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
-const IndexPage = () => (
+
+const IndexPage = ({intl}) => (
   
   <Layout>
-    <SEO title="Bia dot dev" />
+    <SEO title={intl.formatMessage({ id: "title" })}/>
     <div className="intro row">
       <div className="col-12 text-center uppercase">
         <h1>Bia dot dev</h1>
@@ -14,9 +16,10 @@ const IndexPage = () => (
     </div>
 
     <div className="about py-5 d-none d-lg-block">
+   
       <div className="row">
         <div className="col-12">
-          <h2 className="mb-3">About Bia</h2>
+          <h2 className="mb-3"><FormattedMessage id="about"/></h2>
           <p>
             __ Bia is a fullstack <span className="blue">developer</span> and <span className="pink">content creator</span> <br/>
             ___currently learning and coding the MERN stack.<br/>
@@ -74,4 +77,16 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default injectIntl(IndexPage)
+
+export const query = graphql `
+      query ContentFulPosts($locale: String) {
+        allContentfulPost(filter: { node_locale: { eq: $locale } }) {
+          nodes {
+            contentful_id
+            title
+            slug
+          }
+        }
+      }
+`

@@ -1,9 +1,10 @@
 
 {
-    "title": "Gatsby Portuguese",
+    "title": "Bia dot dev",
     "description": "Descrição do projeto",
     "author": "@bia.dev",
-    "hello": "Bem-vindo!",
+    "about Bia": "Sobre Bia",
+    "projects": "Projetos",
     "welcome": "Bem vindo a esse novo site Gatsby",
     "title_page2": "Pagina dois",
     "hello_page2": "Oi da página dois",

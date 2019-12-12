@@ -33,12 +33,13 @@ const { title, author, image, subtitle, content } = data.contentfulPost;
   }
 export default blogPost
 export const pageQuery = graphql`
-    query ($slug: String!){
-  contentfulPost(slug: {eq:$slug }){
+    query ($slug: String!, $locale: String){
+  contentfulPost(slug: {eq:$slug }, node_locale: { eq: $locale }){
       title
       slug
       author
       subtitle
+      node_locale
       image{
         fluid{
           src
@@ -53,3 +54,4 @@ export const pageQuery = graphql`
     }
   }
   `
+ 

@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 h1{
     font-size: 3.5rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: #ff004d;
     display: inline-block;
 }

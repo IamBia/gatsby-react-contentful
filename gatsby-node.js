@@ -46,7 +46,9 @@ exports.createPages = ({ graphql, actions }) => {
                 component: slash(blogPost),
                 context: {
                     slug: edge.node.slug,
-                    id: edge.node.id
+                    id: edge.node.id,
+                    ...page.context,
+                    locale: page.context.intl.language,
                 }
             });
         });
@@ -58,51 +60,4 @@ exports.createPages = ({ graphql, actions }) => {
     
 };
 
-// exports.createPages = ({ graphql, actions }) => {
-//     const { createPage } = actions;
-//     // we use the provided allContentfulPORTFOLIO query to fetch the data from Contentful
-//     return graphql(
-//         `
-//         {
-//             allContentfulPortfolio{
-//                 edges{
-//                     node {
-//                         link
-//                         slug
-//                         title
-//                         description {
-//                             description
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         }
-    
-//     `
-//     ).then(result => {
-//         if (result.errors) {
-//             console.log("Error retrieving contentful data", result.errors);
-//         }
-        
-//         // Resolve the paths to our template
-//         const portfolioPost = path.resolve("./src/templates/portfolioPost.js");
-        
-//         // Then for each result we create a page.
-//         result.data.allContentfulPortfolio.edges.forEach(edge => {
-//             createPage({
-//                 path: `/projects/${edge.node.slug}/`,
-//                 component: slash(portfolioPost),
-//                 context: {
-//                     slug: edge.node.slug,
-//                     id: edge.node.id
-//                 }
-//             });
-//         });
-//     })
-//     .catch(error => {
-//         console.log("Error retrieving contentful data", error);
-//     });
-
-    
-// };
+// npm 

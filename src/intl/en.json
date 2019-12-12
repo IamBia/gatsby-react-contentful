@@ -1,8 +1,9 @@
 {
-    "title": "Gatsby English",
+    "title": "Bia dot dev",
     "description": "Project description",
-    "author": "@lbia.dev",
-    "hello": "Hi people!",
+    "author": "@bia.dev",
+    "about Bia": "About Bia",
+    "projects": "projects",
     "welcome": "Welcome to your new Gatsby site.",
     "title_page2": "Page two",
     "hello_page2": "Hi from the second page",
