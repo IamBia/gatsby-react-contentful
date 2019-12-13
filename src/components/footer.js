@@ -1,4 +1,12 @@
 import React from "react"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { fas, faCamera } from '@fortawesome/free-solid-svg-icons'
+import { dom } from '@fortawesome/fontawesome-svg-core'
+
+dom.watch()
+
+library.add(fab, fas, faInstagram, faCamera)
 
 const footer = () => {
   const footer = {
@@ -18,37 +26,37 @@ const footer = () => {
               <li>
                 <a href="https://www.instagram.com/bia.dev/">
                 <span className="d-none d-lg-block">Instagram</span>
-                  <i className="fab fa-instagram fa-2x d-block d-lg-none"></i>
+                  <i className="fab fa-instagram d-block d-lg-none"></i>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/Bia_Dev">
                      <span className="d-none d-lg-block ">Twitter</span>
-                  <i className="fab fa-twitter fa-2x d-block d-lg-none"></i>
+                  <i className="fab fa-twitter d-block d-lg-none"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.youtube.com/channel/UCvn_yhz5Ar0ISKaWMtcOLLg">
                      <span className="d-none d-lg-block ">YouTube</span>
-                  <i className="fab fa-youtube fa-2x d-block d-lg-none"></i>
+                  <i className="fab fa-youtube d-block d-lg-none"></i>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/IamBia">
                      <span className="d-none d-lg-block">Github</span>
-                  <i className="fab fa-github fa-2x d-block d-lg-none"></i>
+                  <i className="fab fa-github d-block d-lg-none"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/bianca-schuurman-62812151/">
                      <span className="d-none d-lg-block">LinkedIn</span>
-                  <i className="fab fa-linkedin fa-2x d-block d-lg-none"></i>
+                  <i className="fab fa-linkedin d-block d-lg-none"></i>
                 </a>
               </li>
               <li>
                 <a href="https://unsplash.com/@bia_dev">
                      <span className="d-none d-lg-block">Unsplash</span>
-                  <i className="fas fa-camera fa-2x d-block d-lg-none"></i>
+                  <i className="fas fa-camera d-block d-lg-none"></i>
                 </a>
               </li>
             </ul>
