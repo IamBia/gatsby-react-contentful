@@ -1,14 +1,19 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
-import Layout from "../components/layout";
+import Header from "../components/header"
+import Footer from "../components/footer"
+// import Layout from "../components/layout";
 
 const blog = ({data}) => {
 
 const postContent = data.allContentfulPost.edges;
 
   return (
-    <Layout>
+    <div className="container">
+    <Header/>
+
+   
 
     <SEO title="Blog" />
     <h1 className="mb-5 text-center">Blog</h1>
@@ -33,8 +38,10 @@ const postContent = data.allContentfulPost.edges;
       )}
      
     </div>
+    <Footer/>
+    </div>
 
-    </Layout>
+   
   )
   }
 export default blog
