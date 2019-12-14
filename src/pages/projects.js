@@ -3,17 +3,17 @@ import  {graphql}  from "gatsby"
 import SEO from "../components/seo"
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 
 
-
-const projects = ({data}) => {
+const projects = ({data, intl}) => {
     const portfolioContent = data.allContentfulPortfolio.edges;
     return (
         <div className="container">
         <Header/>
-        <SEO title="Projects" />
-        <h1 className="mb-5 text-center">Projects</h1>
+        <SEO title={intl.formatMessage({ id: "projects" })} />
+        <h1 className="mb-5 text-center"><FormattedMessage id="projects"/></h1>
         <div className="row">
         
         { portfolioContent.map(({ node: portfolio }) => 
@@ -39,7 +39,7 @@ const projects = ({data}) => {
         )
     }
     
-    export default projects
+    export default injectIntl(projects)
     
     export const query = graphql`
     query projectsPageQuery{

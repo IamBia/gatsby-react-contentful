@@ -68,8 +68,8 @@ const footer = () => {
         <div className="row">
           <div className="col-12 text-center">
             <p className="py-3 credits">
-              This website is created with love by{" "}
-              <a href="https://instagram.com/bia.dev">Bia</a>
+             <FormattedMessage id="credit"/> 
+               <a href="https://instagram.com/bia.dev"> Bia</a>
             </p>
           </div>
         </div>

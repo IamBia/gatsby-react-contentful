@@ -33,13 +33,13 @@ const IndexPage = ({intl}) => (
           </p><br/>
           <p>
             _______ <FormattedMessage id="born in brazil"/><br/>
-            ______ I work as a front-end <span className="blue"><FormattedMessage id="developer"/></span> for a company, study Communication and Design and<br/>
-            _____ I am a mother of one boy.
+            ______ <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="company"/> <span className="pink"><FormattedMessage id="communication"/></span><FormattedMessage id="student"/><br/>
+            _____ <FormattedMessage id="mother of a boy"/>
           </p><br/>
           <p>
             ____ <FormattedMessage id="know more"/> <br/>
             ___ <FormattedMessage id="connect with me on"/> Instagram, <span className="blue">Github</span>,<br/>
-            __ <span className="pink">Twitter</span>, Youtube, LinkedIn or Unsplash.
+            __ <span className="pink">Twitter</span>, Youtube, LinkedIn <FormattedMessage id="or"/> Unsplash.
           </p>
         </div>
       </div>
