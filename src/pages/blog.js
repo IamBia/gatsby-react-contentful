@@ -24,7 +24,7 @@ const postContent = data.allContentfulPost.edges;
       
           <div className="col-12 col-md-6 col-lg-4 mb-5" key="post.id">
             {
-              <Link to={`/blog/${post.slug}`}>
+              <Link to={`${post.node_locale}/blog/${post.slug}`}>
               <article className="blog d-flex flex-column">
                 <img src={post.image.fluid.src} alt=""></img>
                 <h2>{post.title}</h2>
@@ -53,6 +53,7 @@ query pageQuery{
       node{
       title
       author
+      node_locale
       slug
       subtitle
       id

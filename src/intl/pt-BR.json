@@ -3,18 +3,25 @@
     "title": "Bia dot dev",
     "description": "Descrição do projeto",
     "author": "@bia.dev",
-    "about": "Sobre",
-    "Bia": "Bia",
-    "projects": "Projetos",
-    "welcome": "Bem vindo a esse novo site Gatsby",
-    "title_page2": "Pagina dois",
-    "hello_page2": "Oi da página dois",
-    "go_page2": "Ir à página 2",
-    "welcome_page2": "Bem vindo a página 2",
-    "go_back": "Voltar a página ",
-    "footer_build": "Construído com",
-    "notfound": {
-        "header": "NADA ENCONTRADO",
-        "description": "Você não encontrou nada"
+    "about": "Sobre Bia",
+    "fullstack developer": "desenvolvedora fullstack",
+    "developer": "desenvolvedora",
+    "content creator" : "criadora de conteúdo",
+    "second line": "aprendendo atualmente o MERN stack.",
+    "is a": "é uma",
+    "and": "e",
+    "I have an account on" : "Eu tenho uma conta no",
+    "where I share my daily life not only a": "onde eu compartilho sobre a minha vida não somente como ",
+    "but also as a mother": "mas também como mãe, como mulher no meio tecnológico, como brasileira no exterior e como entusiasta de hardware.",
+    "besides instagram": "Além do Instagram, eu tenho tenho um canal no",
+    "where share": "onde eu compartilho o meu conhecimento e",
+    "experiences dev": "experiências da minha vida como",
+    "born in brazil": "Eu nasci no Brasil e eu vivo por alguns anos na Holanda.",
+    "know more": "Se vocė quiser saber mais sobre mim",
+    "connect with me on": "conecte-se comigo no",
+    "connect me": "Se conecte comigo",
+    "Projects": {
+        "Projects": "projetos"
     }
 }
+

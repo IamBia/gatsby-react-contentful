@@ -13,6 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
                         title
                         subtitle
                         slug
+                        node_locale
                         author
                         content {
                             childContentfulRichText {
@@ -24,6 +25,18 @@ exports.createPages = ({ graphql, actions }) => {
                                 src
                             }
                             title
+                        }
+                    }
+                }
+            }
+            allContentfulPortfolio{
+                edges{
+                    node {
+                        link
+                        slug
+                        title
+                        description {
+                            description
                         }
                     }
                 }
@@ -42,14 +55,14 @@ exports.createPages = ({ graphql, actions }) => {
         // Then for each result we create a page.
         result.data.allContentfulPost.edges.forEach(edge => {
             createPage({
-                path: `/blog/${edge.node.slug}/`,
+                path: `${edge.node.node_locale}/blog/${edge.node.slug}/`,
                 component: slash(blogPost),
                 context: {
                     slug: edge.node.slug,
                     id: edge.node.id,
                     ...page.context,
                     locale: page.context.intl.language,
-                }
+                },
             });
         });
     })

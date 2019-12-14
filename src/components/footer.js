@@ -3,6 +3,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { fas, faCamera } from '@fortawesome/free-solid-svg-icons'
 import { dom } from '@fortawesome/fontawesome-svg-core'
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+
 
 dom.watch()
 
@@ -21,7 +23,7 @@ const footer = () => {
         <div className="row pb-4">
           <div className="col-12">
           <div className="d-lg-flex d-flex flex-column flex-column align-items-center justify-content-center">
-            <h2 className="align-items-center mb-3">Connect with me</h2>
+            <h2 className="align-items-center mb-3"><FormattedMessage id="connect me"/></h2>
             <ul className="d-flex align-items-center ">
               <li>
                 <a href="https://www.instagram.com/bia.dev/">
@@ -76,4 +78,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default injectIntl(footer)
