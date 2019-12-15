@@ -12,8 +12,8 @@ const projects = ({data, intl}) => {
     return (
         <div className="container">
         <Header/>
-        <SEO title={intl.formatMessage({ id: "projects" })} />
-        <h1 className="mb-5 text-center"><FormattedMessage id="projects"/></h1>
+        <SEO title={intl.formatMessage({ id: "Projects" })} />
+        <h1 className="mb-5 text-center"><FormattedMessage id="Projects"/></h1>
         <div className="row">
         
         { portfolioContent.map(({ node: portfolio }) => 
@@ -42,8 +42,8 @@ const projects = ({data, intl}) => {
     export default injectIntl(projects)
     
     export const query = graphql`
-    query projectsPageQuery{
-        allContentfulPortfolio{
+    query projectsPageQuery($locale: String){
+        allContentfulPortfolio(filter: { node_locale: { eq: $locale } }){
             edges{
                 node {
                     link

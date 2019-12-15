@@ -47,8 +47,8 @@ const postContent = data.allContentfulPost.edges;
 export default blog
 
 export const query = graphql`
-query pageQuery{
-  allContentfulPost {
+query pageQuery($locale: String){
+  allContentfulPost (filter: { node_locale: { eq: $locale } }){
     edges{
       node{
       title

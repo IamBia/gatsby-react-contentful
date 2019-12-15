@@ -1,6 +1,19 @@
 const path = require(`path`);
 const slash = require(`slash`);
 
+exports.onCreatePage = ({ page, actions }) => {
+    const { createPage, deletePage } = actions
+    deletePage(page)
+    // You can access the variable "locale" in your page queries now
+    createPage({
+      ...page,
+      context: {
+        ...page.context,
+        locale: page.context.intl.language,
+      },
+    })
+  }
+
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
     // we use the provided allContentfulBlogPost query to fetch the data from Contentful
@@ -29,19 +42,6 @@ exports.createPages = ({ graphql, actions }) => {
                     }
                 }
             }
-            allContentfulPortfolio{
-                edges{
-                    node {
-                        link
-                        slug
-                        title
-                        description {
-                            description
-                        }
-                    }
-                }
-            }
-        }
     
     `
     ).then(result => {
@@ -55,13 +55,11 @@ exports.createPages = ({ graphql, actions }) => {
         // Then for each result we create a page.
         result.data.allContentfulPost.edges.forEach(edge => {
             createPage({
-                path: `${edge.node.node_locale}/blog/${edge.node.slug}/`,
+                path: `$/blog/${edge.node.slug}/`,
                 component: slash(blogPost),
                 context: {
                     slug: edge.node.slug,
-                    id: edge.node.id,
-                    ...page.context,
-                    locale: page.context.intl.language,
+                    id: edge.node.id
                 },
             });
         });

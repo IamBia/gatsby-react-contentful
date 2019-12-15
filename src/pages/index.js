@@ -33,7 +33,7 @@ const IndexPage = ({intl}) => (
           </p><br/>
           <p>
             _______ <FormattedMessage id="born in brazil"/><br/>
-            ______ <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="company"/> <span className="pink"><FormattedMessage id="communication"/></span><FormattedMessage id="student"/><br/>
+            ______ <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="company"/> <span className="pink"><FormattedMessage id="communication"/> </span><FormattedMessage id="student"/><br/>
             _____ <FormattedMessage id="mother of a boy"/>
           </p><br/>
           <p>
@@ -48,27 +48,27 @@ const IndexPage = ({intl}) => (
     <div className="about d-block d-lg-none py-5">
       <div className="row">
         <div className="col-12">
-          <h2 className="mb-3">About Bia</h2>
+        <h2 className="mb-3"><FormattedMessage id="about"/></h2>
           <p>
-            Bia is a fullstack <span className="blue">developer</span> and <span className="pink">content creator</span> <br/>
-            currently learning and coding the MERN stack.<br/>
-             I have an account on <span className="pink">Instagram</span> where I share my daily life not only as <span className="blue">developer</span>, <br/>
-            but also as a mother, as a woman in tech, as a Brazilian living abroad and hardware enthousiast.
+            Bia <FormattedMessage id="is a"/> <span className="blue"><FormattedHTMLMessage id="fullstack developer"/></span> <FormattedHTMLMessage id="and"/> <span className="pink"><FormattedMessage id="content creator"/></span> <br/>
+            <FormattedMessage id="second line"/><br/>
+            <FormattedMessage id="I have an account on"/> <span className="pink">Instagram</span> <FormattedMessage id="where I share my daily life not only a"/> <span className="blue"><FormattedMessage id="developer"/></span>, <br/>
+            <FormattedMessage id="but also as a mother"/>
           </p><br/>
           <p>
-             Besides Instagram, I also have a channel on<br/>
-             <span className="pink">YouTube</span>, where I share knowledge and <br/>
-            experiences of my daily life as a <span className="blue">developer</span>.
+             <FormattedMessage id="besides instagram"/><br/>
+            <span className="pink">YouTube</span>, <FormattedMessage id="where share"/> <br/>
+            <FormattedMessage id="experiences dev"/> <span className="blue"><FormattedMessage id="developer"/></span>.
           </p><br/>
           <p>
-            I was born in Brazil and I live for a couple of years in the Netherlands.<br/>
-            I work as a front-end <span className="blue">developer</span> for a company, study Communication and Design and<br/>
-             I am a mother of one boy.
+            <FormattedMessage id="born in brazil"/><br/>
+            <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="company"/> <span className="pink"><FormattedMessage id="communication"/> </span><FormattedMessage id="student"/><br/>
+            <FormattedMessage id="mother of a boy"/>
           </p><br/>
           <p>
-            If you want to know more about me, <br/>
-            connect with me on Instagram,<br/>
-            <span className="pink">Twitter</span>, Youtube or LinkedIn.
+            <FormattedMessage id="know more"/> <br/>
+            <FormattedMessage id="connect with me on"/> Instagram, <span className="blue">Github</span>,<br/>
+           <span className="pink">Twitter</span>, Youtube, LinkedIn <FormattedMessage id="or"/> Unsplash.
           </p>
         </div>
       </div>

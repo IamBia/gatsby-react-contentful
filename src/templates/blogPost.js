@@ -1,8 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 
-const blogPost = ({ data }) => {
+
+const blogPost = ({ pageContext, data }) => {
 
 const { title, author, image, subtitle, content } = data.contentfulPost;
 
@@ -34,7 +35,7 @@ const { title, author, image, subtitle, content } = data.contentfulPost;
 export default blogPost
 export const pageQuery = graphql`
     query ($slug: String!, $locale: String){
-  contentfulPost(slug: {eq:$slug }, node_locale: { eq: $locale }){
+    contentfulPost(slug: { eq:$slug }, node_locale: { eq: $locale }){
       title
       slug
       author

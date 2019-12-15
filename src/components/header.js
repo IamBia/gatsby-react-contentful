@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/biadev-logo-black-small.jpeg"
 import Language from "../components/language";
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,7 +18,7 @@ import Language from "../components/language";
       <div className="col-lg-3 d-flex align-items-end justify-content-center justify-content-lg-start">
         <div className=" align-items-center mr-6">
             <Link to="/" className="brand justify-content-center justify-content-lg-start d-flex">
-              <img src={logo} className="img-fluid"></img>
+              <img src={logo} className="img-fluid" alt="logo"></img>
             </Link>
         </div>
       </div>
@@ -41,7 +43,7 @@ import Language from "../components/language";
               to={`/projects/`}
               className="li block mt-4 lg:inline-block lg:mt-0  pl-4"
             >
-              Projects
+              <FormattedMessage id="Projects"/>
             </Link>
           
         </ul>
@@ -60,4 +62,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default injectIntl(Header)
