@@ -1,5 +1,5 @@
 const path = require(`path`);
-const slash = require(`slash`);
+// const slash = require(`slash`);
 
 exports.onCreatePage = ({ page, actions }) => {
     const { createPage, deletePage } = actions
@@ -25,6 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
                     node {
                         title
                         subtitle
+                        id
                         slug
                         node_locale
                         author
@@ -42,6 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
                     }
                 }
             }
+        }
     
     `
     ).then(result => {
@@ -54,12 +56,13 @@ exports.createPages = ({ graphql, actions }) => {
         
         // Then for each result we create a page.
         result.data.allContentfulPost.edges.forEach(edge => {
+      
             createPage({
-                path: `$/blog/${edge.node.slug}/`,
-                component: slash(blogPost),
+                path: `${edge.node.node_locale}/blog/${edge.node.slug}/`,
+                component: blogPost,
+                id: edge.node.id,
                 context: {
-                    slug: edge.node.slug,
-                    id: edge.node.id
+                slug: edge.node.slug
                 },
             });
         });

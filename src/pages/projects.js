@@ -14,7 +14,7 @@ const projects = ({data, intl}) => {
         <Header/>
         <SEO title={intl.formatMessage({ id: "Projects" })} />
         <h1 className="mb-5 text-center"><FormattedMessage id="Projects"/></h1>
-        <div className="row">
+        <div className="row mb-5">
         
         { portfolioContent.map(({ node: portfolio }) => 
         
