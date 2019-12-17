@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <Header />
+        {/* <Header /> */}
         <main>{children}</main>
       </div>
       <Footer/>

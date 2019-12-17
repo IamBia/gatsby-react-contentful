@@ -24,7 +24,7 @@ const postContent = data.allContentfulPost.edges;
             {
               <Link to={`/blog/${post.slug}`}>
               <article className="blog d-flex flex-column" key={post.id}>
-                <img src={post.image.fluid.src} alt=""></img>
+                <img src={post.image.fluid.srcWebp} alt=""></img>
                 <h2>{post.title}</h2>
                 
                 <p>{post.subtitle}</p>
@@ -59,7 +59,7 @@ query pageQuery($locale: String){
       id
       image{
         fluid{
-          src
+          srcWebp
         }
       }
       content{

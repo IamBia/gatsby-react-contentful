@@ -1,6 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
 import Header from "../components/header"
+import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 const blogPost = ({ pageContext, data }) => {
@@ -11,26 +12,27 @@ const { title, author, image, subtitle, content } = data.contentfulPost;
   
     <div className="container mb-5">
     <Header/>
+    <Layout>
     <div className="row">
       <div className="col-12">
-      <div className="blog-posts d-flex justify-content-center align-items-center">
-          <article>
-          
+      <div className="blog-post d-flex flex-column">
+          <article className="d-flex flex-column">
             <h1>{title}</h1>
             <p>{subtitle}</p>
           
-            <img src={image.fluid.src} alt={title} className="my-4"></img>
+            <img src={image.fluid.srcWebp} alt={title} className="my-4"></img>
            
             <div dangerouslySetInnerHTML={{__html: content.childContentfulRichText.html}}></div>
             <p className="author mt-5"><FormattedMessage id="author"/>: {author}</p>
           </article>
+          <Link to="/blog" className="uppercase mt-3 d-flex">Back to Blog</Link>
           </div>
-          <Link to="/blog" className="uppercase mt-3 d-block d-lg-none">Back to Blog</Link>
+         
       </div>
 
-      <Link to="/blog" className="uppercase mt-5 d-none d-lg-block">Back to Blog</Link>
+      {/* <Link to="/blog" className="uppercase mt-5 d-none d-lg-block">Back to Blog</Link> */}
     </div>
-
+    </Layout>
     </div>
   
   )
@@ -46,7 +48,7 @@ export const pageQuery = graphql`
       node_locale
       image{
         fluid{
-          src
+          srcWebp
         }
       }
       content{
