@@ -20,10 +20,10 @@ const postContent = data.allContentfulPost.edges;
     
       { postContent.map(({ node: post }, index) => 
 
-          <div className="col-12 col-md-6 col-lg-4 mb-5" key="index">
+          <div className="col-12 col-md-6 col-lg-4 mb-5" key={index}>
             {
-              <Link to={`${post.node_locale}/blog/${post.slug}`}>
-              <article className="blog d-flex flex-column">
+              <Link to={`/blog/${post.slug}`}>
+              <article className="blog d-flex flex-column" key={post.id}>
                 <img src={post.image.fluid.src} alt=""></img>
                 <h2>{post.title}</h2>
                 

@@ -16,14 +16,14 @@ const projects = ({data, intl}) => {
         <h1 className="mb-5 text-center"><FormattedMessage id="Projects"/></h1>
         <div className="row mb-5">
         
-        { portfolioContent.map(({ node: portfolio }) => 
+        { portfolioContent.map(({ node: portfolio }, index) => 
         
-        <div className="col-12 col-md-6 col-lg-4 mb-5" key="portfolio.id">
+        <div className="col-12 col-md-6 col-lg-4 mb-5" key={index}>
         {   
             <article className="portfolio d-flex flex-column">
             <h2>{portfolio.title}</h2>
             <p className="mt-2">{portfolio.description.description}</p>
-            <a className="source_btn mt-auto" href={portfolio.link}><i class="fab fa-github mr-2"></i> Source</a>
+            <a className="source_btn mt-auto" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>
             </article>
             
         }

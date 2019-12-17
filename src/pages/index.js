@@ -10,7 +10,7 @@ const IndexPage = ({intl}) => (
     <SEO title={intl.formatMessage({ id: "title" })}/>
     <div className="intro row">
       <div className="col-12 text-center uppercase">
-        <h1>Bia dot dev</h1>
+        <h1>Bia in tech</h1>
         <p><FormattedMessage id="fullstack developer"/></p>
       </div>
     </div>
@@ -33,7 +33,7 @@ const IndexPage = ({intl}) => (
           </p><br/>
           <p>
             _______ <FormattedMessage id="born in brazil"/><br/>
-            ______ <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="company"/> <span className="pink"><FormattedMessage id="communication"/> </span><FormattedMessage id="student"/><br/>
+            ______ <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="empresa"/> <span className="pink"><FormattedMessage id="communication"/> </span><FormattedMessage id="student"/><br/>
             _____ <FormattedMessage id="mother of a boy"/>
           </p><br/>
           <p>
@@ -62,7 +62,7 @@ const IndexPage = ({intl}) => (
           </p><br/>
           <p>
             <FormattedMessage id="born in brazil"/><br/>
-            <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="company"/> <span className="pink"><FormattedMessage id="communication"/> </span><FormattedMessage id="student"/><br/>
+            <FormattedMessage id="i work"/> <span className="blue"><FormattedMessage id="developer"/></span> <FormattedMessage id="empresa"/> <span className="pink"><FormattedMessage id="communication"/> </span><FormattedMessage id="student"/><br/>
             <FormattedMessage id="mother of a boy"/>
           </p><br/>
           <p>
