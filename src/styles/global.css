@@ -118,3 +118,16 @@ footer ul li {
     color: #ff004d;
 }
 
+.instaLinks{
+    border: 1px solid #00adb5;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.instaLinks:hover{
+    border: 1px solid #ff004d;
+}
+
+.instaLinks:hover h2{
+    color: #ff004d;
+}

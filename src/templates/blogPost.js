@@ -6,7 +6,7 @@ import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 const blogPost = ({ pageContext, data }) => {
 
-const { title, author, image, subtitle, content } = data.contentfulPost;
+const { title, author, image, content } = data.contentfulPost;
 
   return (
   
@@ -18,7 +18,6 @@ const { title, author, image, subtitle, content } = data.contentfulPost;
       <div className="blog-post d-flex flex-column">
           <article className="d-flex flex-column">
             <h1>{title}</h1>
-            <p>{subtitle}</p>
           
             <img src={image.fluid.srcWebp} alt={title} className="my-4"></img>
            
@@ -44,7 +43,7 @@ export const pageQuery = graphql`
       title
       slug
       author
-      subtitle
+
       node_locale
       image{
         fluid{

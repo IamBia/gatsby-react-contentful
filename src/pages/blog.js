@@ -12,6 +12,7 @@ const blog = ({data}) => {
 const postContent = data.allContentfulPost.edges;
   return (
     <div className="container">
+
     <Header/>
 
     <SEO title="Blog" />
@@ -37,6 +38,7 @@ const postContent = data.allContentfulPost.edges;
       )}
      
     </div>
+    
     <Footer/>
     </div>
 

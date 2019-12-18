@@ -3,8 +3,6 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import SEO from "../components/seo"
 import { injectIntl, FormattedMessage, FormattedHTMLMessage } from "gatsby-plugin-intl"
-// import bianca1 from '../images/bianca-1.png'
-// import bianca2 from '../images/bianca-2.png'
 
 
 const IndexPage = ({intl}) => (
@@ -30,7 +28,7 @@ const IndexPage = ({intl}) => (
             ____ <FormattedMessage id="third line"/> <span className="pink">Instagram</span>.<br/>
             _____ <FormattedMessage id="there"/><span className="pink"> Instagram </span><FormattedMessage id="where I share my daily life not only a"/> <span className="blue"><FormattedMessage id="developer"/></span><br/>
             _______ <FormattedMessage id="but also as a mother"/><br/>
-            ________<FormattedMessage id="hardware"/>
+            ________<FormattedMessage id="hardware"/>.
           </p>
           <p>
             ______ <FormattedMessage id="besides instagram"/><br/>
