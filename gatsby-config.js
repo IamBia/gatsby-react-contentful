@@ -1,12 +1,12 @@
 require('dotenv').config({
-  path: `.env.development`,
+  path: `.env`,
 });
 
 module.exports = {
   siteMetadata: {
-    title: `Bia.dev Blog`,
-    description: `Sharing my experience as a developer`,
-    author: `@bia.dev`,
+    title: `Bia.dev`,
+    description: `I am sharing my experience as a Fullstack and developer, content creator, mother and woman in tech.`,
+    author: `Bianca Schuurman`,
   },
   plugins: [
   

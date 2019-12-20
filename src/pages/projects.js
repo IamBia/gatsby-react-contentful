@@ -1,17 +1,19 @@
 import React from "react"
-import  {graphql}  from "gatsby"
+import  { graphql }  from "gatsby"
 import SEO from "../components/seo"
-import Header from "../components/header";
-import Footer from "../components/footer";
+// import Header from "../components/header";
+// import Footer from "../components/footer";
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import Layout from "../components/layout";
 
 
 
 const projects = ({data, intl}) => {
     const portfolioContent = data.allContentfulPortfolio.edges;
     return (
+        <Layout>
         <div className="container">
-        <Header/>
+      
         <SEO title={intl.formatMessage({ id: "Projects" })} />
         <h1 className="mb-5 text-center"><FormattedMessage id="Projects"/></h1>
         <div className="row mb-5">
@@ -31,10 +33,11 @@ const projects = ({data, intl}) => {
         )}
         
         </div>
-        <Footer/>
+       
+      
         </div>
         
-        
+        </Layout>
         
         )
     }

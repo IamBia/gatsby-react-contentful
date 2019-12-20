@@ -15,8 +15,8 @@ import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
       <Language/>
       </div>
     <nav className="justify-content-center justify-content-between row pb-6">
-      <div className="col-lg-3 d-flex align-items-end justify-content-center justify-content-lg-start">
-        <div className=" align-items-center mr-6">
+      <div className="col-lg-3">
+        <div className=" d-flex align-items-center justify-content-center justify-content-lg-start mr-6 h-100">
             <Link to="/" className="brand justify-content-center justify-content-lg-start d-flex">
               <img src={logo} className="img-fluid" alt="logo"></img>
             </Link>

@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
+
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 // import Layout from "../components/layout";
@@ -11,11 +11,11 @@ const blog = ({data}) => {
 
 const postContent = data.allContentfulPost.edges;
   return (
-    <div className="container">
-
-    <Header/>
+    <Layout>
+<div>
 
     <SEO title="Blog" />
+    <div>
     <h1 className="mb-5 text-center">Blog</h1>
     <div className="row mb-5">
     
@@ -25,10 +25,10 @@ const postContent = data.allContentfulPost.edges;
             {
               <Link to={`/blog/${post.slug}`}>
               <article className="blog d-flex flex-column" key={post.id}>
-                <img src={post.image.fluid.srcWebp} alt=""></img>
+                <img src={post.image.fluid.src} alt={post.title}></img>
                 <h2>{post.title}</h2>
                 
-                <p>{post.subtitle}</p>
+                <p className="mb-3">{post.subtitle}</p>
                 <p className="author uppercase mt-auto"><FormattedMessage id="author"/>: {post.author}</p>
                 {/* <div dangerouslySetInnerHTML={{__html: post.content.childContentfulRichText.html}}></div> */}
               </article>
@@ -36,13 +36,11 @@ const postContent = data.allContentfulPost.edges;
               }
           </div>
       )}
-     
     </div>
-    
-    <Footer/>
     </div>
 
-   
+    </div>
+    </Layout>
   )
   }
 export default injectIntl(blog)
@@ -61,7 +59,7 @@ query pageQuery($locale: String){
       id
       image{
         fluid{
-          srcWebp
+          src
         }
       }
       content{
