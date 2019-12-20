@@ -1,23 +1,16 @@
 import React from 'react'
 import { injectIntl, FormattedMessage, FormattedHTMLMessage } from "gatsby-plugin-intl"
-import SEO from "../seo"
+// import SEO from "../seo"
 
 const aboutMe = ({intl}) =>{
 return(
-<div>
-<SEO title={intl.formatMessage({ id: "title" })}/>
-<div className="intro row">
-  <div className="col-12 text-center uppercase">
-    <h1>Bia Dev</h1>
-    <p><FormattedMessage id="fullstack developer"/></p>
-  </div>
-</div>
+<div className="full-height d-flex align-items-center p-2">
 
 <div className="about py-5 d-none d-lg-block">
 
   <div className="row">
     <div className="col-12">
-      <h2 className="mb-3"><FormattedMessage id="about"/></h2>
+      <h2 className="headline mb-3"><FormattedMessage id="about"/></h2>
       <p>
         __ <FormattedMessage id="I am a"/> <span className="blue"><FormattedHTMLMessage id="fullstack developer"/></span> <FormattedHTMLMessage id="and"/> <span className="pink"><FormattedMessage id="content creator"/></span> <br/>
         ___<FormattedMessage id="second line"/><br/>

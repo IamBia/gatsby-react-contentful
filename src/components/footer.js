@@ -12,19 +12,22 @@ library.add(fab, fas, faInstagram, faCamera)
 
 const footer = () => {
   const footer = {
-    height: "25vh",
-    backgroundColor: "#1e2021",
-    color: '#fff'
-  }
+    height: "100vh",
+    color: '#fff',
+    margin: `0 auto`,
+    maxWidth: 960,
+    padding: `0px 1.0875rem 1.45rem`,
+    paddingTop: 0,
+    }
 
   return (
     <footer style={footer}>
       <div className="container ">
         <div className="row pb-4">
           <div className="col-12">
-          <div className="d-lg-flex d-flex flex-column flex-column align-items-center justify-content-center">
-            <h2 className="align-items-center mb-3"><FormattedMessage id="connect me"/></h2>
-            <ul className="d-flex align-items-center ">
+          <div className="d-lg-flex d-flex flex-column flex-column">
+            <h2 className="align-items-center mb-3 headline"><FormattedMessage id="connect me"/></h2>
+            <ul className="align-items-center ">
               <li>
                 <a href="https://www.instagram.com/bia.dev/">
                 <span className="d-none d-lg-block">Instagram</span>
@@ -66,10 +69,9 @@ const footer = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 text-center">
-            <p className="py-3 credits">
-             <FormattedMessage id="credit"/> 
-               <a href="https://instagram.com/bia.dev"> Bia</a>
+          <div className="col-12">
+            <p className="credits  text-center mt-auto d-flex">
+             <FormattedMessage id="credit"/><a href="https://instagram.com/bia.dev"> Bia</a>
             </p>
           </div>
         </div>
