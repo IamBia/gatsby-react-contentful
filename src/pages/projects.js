@@ -12,7 +12,7 @@ const projects = ({data, intl}) => {
     const portfolioContent = data.allContentfulPortfolio.edges;
     return (
         <Layout>
-        <div className="container">
+        <div className="full-height">
       
         <SEO title={intl.formatMessage({ id: "Projects" })} />
         <h1 className="mb-5 text-center"><FormattedMessage id="Projects"/></h1>

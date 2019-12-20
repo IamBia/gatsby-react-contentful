@@ -12,11 +12,11 @@ const blog = ({data}) => {
 const postContent = data.allContentfulPost.edges;
   return (
     <Layout>
-<div>
+  <div className="full-height">
 
     <SEO title="Blog" />
     <div>
-    <h1 className="mb-5 text-center">Blog</h1>
+    <h1 className="mb-5">Blog</h1>
     <div className="row mb-5">
     
       { postContent.map(({ node: post }, index) => 
