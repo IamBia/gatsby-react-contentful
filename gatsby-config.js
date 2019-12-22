@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Bia Dev`,
+    title: `Bianca Schuurman, fullstack developer`,
     description: `I am sharing my experience as a Fullstack and developer, content creator, mother and woman in tech.`,
     author: `Bianca Schuurman`,
   },
@@ -13,13 +13,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `@contentful/gatsby-transformer-contentful-richtext`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

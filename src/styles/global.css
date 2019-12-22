@@ -16,9 +16,10 @@ h1{
 
 @media screen and (max-width: 500px){
     h1{
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 }
+
 
 h1:hover{
     color: #000;
@@ -64,9 +65,7 @@ p::selection{
 
 /* header */
 
-.header{
-    height: 20vh;
-}
+
 
 .brand{
     font-family: 'Poppins', sans-serif;
@@ -92,6 +91,12 @@ li{
     height: 70vh;
 }
 
+@media screen and (max-width: 500px){
+    .hero {
+        height: 90vh;
+    }
+}
+
 .hero h1{
     font-size: 6rem;
 }
@@ -106,6 +111,12 @@ li{
     font-size: 4rem;
 }
 
+@media screen and (max-width: 500px){
+    .headline{
+        font-size: 2.5rem;
+    }
+}
+
 /* blog */
 
 .author{
@@ -118,6 +129,7 @@ li{
     padding: 20px;
     border-radius: 5px;
 }
+
 
 .blog h2{
     font-size: 1.8rem;
@@ -155,6 +167,8 @@ li{
     justify-content: center;
 }
 
+
+
 .source_btn:hover, .blog:hover{
     border: 1px solid #ff004d;
     box-shadow: #000 2px 2px 2px;
@@ -163,16 +177,45 @@ li{
 
 /* footer */
 
+footer{
+    height: 100vh;
+}
+@media screen and (max-width:500px){
+    footer{
+        height: 40vh;
+    }
+}
+
 footer ul li {
     margin: 0 15px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
 }
 
+@media screen and (max-width: 500px){
+    footer ul li {
+        margin: 10px 10px 0 10px;
+        font-size: 2rem;
+    }
+    footer ul li:first-child{
+        margin-left: 0px;
+    }
+}
+
 
 .credits{
     font-size: 1.5rem;
 }
+
+.credits a{
+    color: #ff004d;
+}
+@media screen and (max-width: 500px){
+    .credits{
+        font-size: 1rem;
+    }
+}
+
 .blue{
  color: #00adb5;
 }

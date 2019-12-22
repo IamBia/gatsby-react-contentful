@@ -12,12 +12,10 @@ library.add(fab, fas, faInstagram, faCamera)
 
 const footer = () => {
   const footer = {
-    height: "100vh",
     color: '#fff',
     margin: `0 auto`,
     maxWidth: 960,
-    padding: `0px 1.0875rem 1.45rem`,
-    paddingTop: 0,
+    padding: `0px 1.0875rem 1.45rem`
     }
 
   return (
@@ -25,9 +23,9 @@ const footer = () => {
       <div className="container ">
         <div className="row pb-4">
           <div className="col-12">
-          <div className="d-lg-flex d-flex flex-column flex-column">
-            <h2 className="align-items-center mb-3 headline"><FormattedMessage id="connect me"/></h2>
-            <ul className="align-items-center ">
+          <div className="d-flex flex-column ">
+            <h2 className="d-flex align-items-center mb-3 headline justify-content-center justify-content-lg-start"><FormattedMessage id="connect me"/></h2>
+            <ul className="d-flex flex-lg-column justify-content-center">
               <li>
                 <a href="https://www.instagram.com/bia.dev/">
                 <span className="d-none d-lg-block">Instagram</span>
@@ -70,9 +68,11 @@ const footer = () => {
         </div>
         <div className="row">
           <div className="col-12">
-            <p className="credits  text-center mt-auto d-flex">
+          <div className="credit h-100">
+            <p className="credits text-center mt-auto">
              <FormattedMessage id="credit"/><a href="https://instagram.com/bia.dev"> Bia</a>
             </p>
+            </div>
           </div>
         </div>
       </div>

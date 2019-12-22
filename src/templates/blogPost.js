@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../components/header"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
@@ -10,8 +9,8 @@ const { title, author, image, content } = data.contentfulPost;
 
   return (
   
-    <div className="container mb-5">
-    <Header/>
+
+ 
     <Layout>
     <div className="row">
       <div className="col-12">
@@ -32,7 +31,7 @@ const { title, author, image, content } = data.contentfulPost;
       {/* <Link to="/blog" className="uppercase mt-5 d-none d-lg-block">Back to Blog</Link> */}
     </div>
     </Layout>
-    </div>
+   
   
   )
   }

@@ -25,7 +25,7 @@ const projects = ({data, intl}) => {
             <article className="portfolio d-flex flex-column">
             <h2>{portfolio.title}</h2>
             <p className="mt-2">{portfolio.description.description}</p>
-            <a className="source_btn mt-auto" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>
+            <a className="source_btn mt-3 mt-md-auto" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>
             </article>
             
         }
