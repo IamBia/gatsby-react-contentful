@@ -18,7 +18,7 @@ import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
       <div className="col-lg-3">
         <div className=" d-flex align-items-center justify-content-center justify-content-lg-start mr-6 h-100">
             <Link to="/" className="brand justify-content-center justify-content-lg-start d-flex">
-              <img src={logo} className="img-fluid" alt="Bia Dev"></img>
+              <img src={logo} className="logo" alt="Bia Dev"></img>
             </Link>
         </div>
       </div>
