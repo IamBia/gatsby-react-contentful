@@ -12,7 +12,7 @@ const { title, author, image, content } = data.contentfulPost;
 
  
     <Layout>
-    <div className="row">
+    <div className="row my-5">
       <div className="col-12">
       <div className="blog-post d-flex flex-column">
           <article className="d-flex flex-column">

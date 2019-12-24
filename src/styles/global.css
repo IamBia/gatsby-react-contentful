@@ -45,7 +45,7 @@ nav ul a{
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
-    color: #000;
+    color: #fff;
 }
 
 
@@ -69,10 +69,6 @@ p::selection{
     width: 60px;
     height: 60px;
 }
-
-
-
-
 
 li{
     padding: 5px;
@@ -137,9 +133,9 @@ li{
     color: #fff;
 }
 
-
-.blog-posts h1{
-    font-size: 3rem;
+article h1{
+    font-size: 3.5rem;
+    margin-top: 40px;
 }
 
 /* projects */
