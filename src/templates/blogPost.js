@@ -18,7 +18,7 @@ const { title, author, image, content } = data.contentfulPost;
           <article className="d-flex flex-column">
             <h1>{title}</h1>
           
-            <img src={image.fluid.srcWebp} alt={title} className="my-4"></img>
+            <img src={image.fluid} alt={title} className="my-4"></img>
            
             <div dangerouslySetInnerHTML={{__html: content.childContentfulRichText.html}}></div>
             <p className="author mt-5"><FormattedMessage id="author"/>: {author}</p>
@@ -46,7 +46,7 @@ export const pageQuery = graphql`
       node_locale
       image{
         fluid{
-          srcWebp
+          src
         }
       }
       content{
