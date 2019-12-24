@@ -20,12 +20,11 @@ const footer = () => {
 
   return (
     <footer style={footer}>
-      <div className="container ">
         <div className="row pb-4">
           <div className="col-12">
-          <div className="d-flex flex-column ">
-            <h2 className="d-flex align-items-center mb-3 headline justify-content-center justify-content-lg-start"><FormattedMessage id="connect me"/></h2>
-            <ul className="d-flex flex-lg-column justify-content-center">
+          <div className="d-flex flex-column">
+            <h2 className="d-flex  mb-3 headline justify-content-center justify-content-lg-start"><FormattedMessage id="connect me"/></h2>
+            <ul className="d-flex flex-wrap justify-content-start pl-0">
               <li>
                 <a href="https://www.instagram.com/bia.dev/">
                 <span className="d-none d-lg-block">Instagram</span>
@@ -66,16 +65,15 @@ const footer = () => {
           </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-auto">
           <div className="col-12">
-          <div className="credit h-100">
+          <div className="credit h-100 py-3">
             <p className="credits text-center mt-auto">
              <FormattedMessage id="credit"/><a href="https://instagram.com/bia.dev"> Bia</a>
             </p>
             </div>
           </div>
         </div>
-      </div>
     </footer>
   )
 }
