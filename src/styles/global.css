@@ -68,14 +68,9 @@ p::selection{
 
 
 .brand{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.brand img{
     width: 30%;
 }
+
 
 li{
     padding: 5px;
