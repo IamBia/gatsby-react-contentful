@@ -23,12 +23,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/blog/`, `/projects/*`],
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `biadev.co`,
@@ -46,6 +40,12 @@ module.exports = {
           lang: `pt-BR`,
         }
         ]
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/blog/`, `/projects/*`],
       },
     },
     {
@@ -67,6 +67,17 @@ module.exports = {
           // option to redirect to `/en` when connecting `/`
           redirect: true,
       },
+  },
+  { 
+    resolve: `gatsby-plugin-purgecss`,
+    options: {
+      printRejected: true, // Print removed selectors and processed file names
+      develop: true, // Enable while using `gatsby develop`
+      tailwind: true, // Enable tailwindcss support
+      whitelist: ['whitelist'], // Don't remove this selector
+      ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+      purgeOnly : ['components/', '/global.css', 'node_modules/bootstrap', 'tailwindcss'], // Purge only these files/folders
+    }
   },
   {
     resolve: `gatsby-plugin-prefetch-google-fonts`,
