@@ -186,6 +186,7 @@ footer ul li {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
 }
+
 footer ul li:first-child, footer ul li:last-child{
     margin-left: 0px;
 }
@@ -194,6 +195,10 @@ footer ul li:first-child, footer ul li:last-child{
     footer ul li {
         margin: 10px 10px 0 10px;
         font-size: 2rem;
+    }
+
+    footer ul li:first-child, footer ul li:last-child{
+        margin-left: 10px;
     }
 }
 
