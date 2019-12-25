@@ -83,5 +83,11 @@ module.exports = {
       defaultDataLayer: { platform: "gatsby" },
     },
   },
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options:{
+      trakingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+    }
+  }
   ],
 }
