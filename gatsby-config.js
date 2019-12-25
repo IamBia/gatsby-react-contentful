@@ -23,14 +23,29 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/blog/`, `/projects/*`],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `biadev.co`,
+        short_name: `Bia Dev`,
+        icon: `src/images/biadev-logo-black-small.jpeg`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1e1e1e`,
+        theme_color: `#1e1e1e`,
         display: `minimal-ui`,
+        favicon: 'yes',
+        lang: `en`,
+        localize:[
+        {
+          start_url: `/pt-BR/`,
+          lang: `pt-BR`,
+        }
+        ]
       },
     },
     {

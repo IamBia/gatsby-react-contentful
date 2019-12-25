@@ -8,9 +8,6 @@ const blogPost = ({ pageContext, data }) => {
 const { title, author, image, content } = data.contentfulPost;
 
   return (
-  
-
- 
     <Layout>
     <div className="row my-5">
       <div className="col-12">
