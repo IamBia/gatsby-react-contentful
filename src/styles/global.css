@@ -43,7 +43,7 @@ ul a:hover{
 
 nav ul a{
     text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
     color: #fff;
 }
