@@ -71,7 +71,7 @@ module.exports = {
   {
     resolve: "gatsby-plugin-google-tagmanager",
     options: {
-      id: " GTM-P29D3XB",
+      id: `${process.env.ID}`,
 
       // Include GTM in development.
       // Defaults to false meaning GTM will only be loaded in production.
@@ -85,8 +85,8 @@ module.exports = {
   },
   {
     resolve: `gatsby-plugin-google-analytics`,
-    options:{
-      trakingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+    options: {
+      trakingID: `${process.env.GOOGLE_ANALYTICS_TRACKING_ID}`,
     }
   }
   ],
