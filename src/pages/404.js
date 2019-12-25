@@ -8,7 +8,6 @@ import banana from "../images/giphy.gif"
 
 const NotFoundPage = () => (
   <Layout>
-    <Header></Header>
     <SEO title="404: Not found" />
     <div className="d-flex flex-column justify-content-center align-items-center">
     <h1>NOT FOUND</h1>
