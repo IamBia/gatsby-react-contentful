@@ -10,7 +10,9 @@ const insta = ({data}) => {
     const linkContent = data.allContentfulSocialLinks.edges;
     return(
         <Layout>
+             <div className="my-5">
             <SEO title="Links"/>
+           
             <h1>Links</h1>
             { linkContent.map(({ node: post }, index) => 
 
@@ -24,6 +26,7 @@ const insta = ({data}) => {
                 }
             </div>
             )}
+            </div>
         </Layout>
     )
 }
