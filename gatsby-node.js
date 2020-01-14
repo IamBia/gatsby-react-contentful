@@ -21,7 +21,7 @@ exports.onCreatePage = ({ page, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
     // we use the provided allContentfulBlogPost query to fetch the data from Contentful
-   const mygraph = () => {
+//    const mygraph = () => {
    return graphql(
         `
         {
@@ -77,7 +77,7 @@ exports.createPages = ({ graphql, actions }) => {
     });
 
     
-}};
+};
 
 exports.onCreateWebpackConfig = ({
     actions //, stage, getConfig, rules, loaders, 
