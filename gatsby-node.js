@@ -10,19 +10,16 @@ exports.onCreatePage = ({ page, actions }) => {
       ...page,
       context: {
         ...page.context,
-        locale: page.context.intl.language,
-    
+        locale: page.context.intl.language
       },
     })
   }
 
-
-
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
     // we use the provided allContentfulBlogPost query to fetch the data from Contentful
-//    const mygraph = () => {
-   return graphql(
+   
+   const mygraph =  graphql(
         `
         {
             allContentfulPost {
@@ -79,12 +76,5 @@ exports.createPages = ({ graphql, actions }) => {
     
 };
 
-exports.onCreateWebpackConfig = ({
-    actions //, stage, getConfig, rules, loaders, 
-  }) => {
-    actions.setWebpackConfig({
-      externals: ['canvas'],
-    });
-  }
 
 // npm 
