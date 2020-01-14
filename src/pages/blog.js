@@ -23,7 +23,7 @@ const postContent = data.allContentfulPost.edges;
 
           <div className="col-12 col-md-6 col-lg-4 mb-5" key={index}>
             {
-              <Link to={`/blog/${post.slug}`}>
+              <Link to={`/blog/${post.slug}/`}>
               <article className="blog d-flex flex-column" key={post.id}>
                 <img src={post.image.fluid.src} alt={post.title}></img>
                 <h2>{post.title}</h2>

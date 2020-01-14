@@ -1,5 +1,6 @@
 const path = require(`path`);
 // const slash = require(`slash`);
+const mygraph = require('graphql');
 
 exports.onCreatePage = ({ page, actions }) => {
     const { createPage, deletePage } = actions
@@ -10,14 +11,18 @@ exports.onCreatePage = ({ page, actions }) => {
       context: {
         ...page.context,
         locale: page.context.intl.language,
+    
       },
     })
   }
 
+
+
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
     // we use the provided allContentfulBlogPost query to fetch the data from Contentful
-    return graphql(
+   const mygraph = () => {
+   return graphql(
         `
         {
             allContentfulPost {
@@ -72,6 +77,14 @@ exports.createPages = ({ graphql, actions }) => {
     });
 
     
-};
+}};
+
+exports.onCreateWebpackConfig = ({
+    actions //, stage, getConfig, rules, loaders, 
+  }) => {
+    actions.setWebpackConfig({
+      externals: ['canvas'],
+    });
+  }
 
 // npm 

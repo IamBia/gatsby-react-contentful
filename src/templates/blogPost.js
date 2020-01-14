@@ -7,6 +7,7 @@ const blogPost = ({ pageContext, data }) => {
 
 const { title, author, image, content } = data.contentfulPost;
 
+
   return (
     <Layout>
     <div className="row my-5">
@@ -14,7 +15,6 @@ const { title, author, image, content } = data.contentfulPost;
       <div className="blog-post d-flex flex-column">
           <article className="d-flex flex-column">
             <h1>{title}</h1>
-
             <img src={image.fluid.src} alt={title} className="my-4"/>
            
             <div dangerouslySetInnerHTML={{__html: content.childContentfulRichText.html}}></div>
@@ -23,9 +23,7 @@ const { title, author, image, content } = data.contentfulPost;
           <Link to="/blog" className="uppercase mt-3 d-flex">Back to Blog</Link>
           </div>
          
-      </div>
-
-      {/* <Link to="/blog" className="uppercase mt-5 d-none d-lg-block">Back to Blog</Link> */}
+      </div>  
     </div>
     </Layout>
    
