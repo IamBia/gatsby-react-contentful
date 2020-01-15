@@ -27,8 +27,7 @@ h1:hover{
 
 h2{
     font-size: 2.5rem;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #00adb5;
@@ -137,6 +136,11 @@ li{
 article h1{
     font-size: 3.5rem;
     margin-top: 40px;
+}
+
+article h2{
+    margin-top: 50px;
+    margin-bottom: 5px;
 }
 
 article a{
