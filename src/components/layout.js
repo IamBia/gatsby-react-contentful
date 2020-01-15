@@ -8,6 +8,8 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {

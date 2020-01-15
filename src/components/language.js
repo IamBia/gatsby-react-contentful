@@ -25,7 +25,7 @@ const languageClick = (e, language) => {
                 margin: 10,
                 cursor: `pointer`,
               }}
-              href="/"
+              
             >
               {languageName[language]}
             </a>
