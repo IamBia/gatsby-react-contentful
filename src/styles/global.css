@@ -151,7 +151,7 @@ article a{
     text-decoration: underline !important;
 }
 
-article u {
+article ul {
     list-style-type: disc;
     margin: 25px;
 }
