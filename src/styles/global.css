@@ -151,6 +151,11 @@ article a{
     text-decoration: underline !important;
 }
 
+article u {
+    list-style-type: disc;
+    margin: 25px;
+}
+
 /* projects */
 
 .portfolio{
