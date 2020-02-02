@@ -12,7 +12,7 @@ const blog = ({data}) => {
 const postContent = data.allContentfulPost.edges;
   return (
     <Layout>
-  <div className="full-height">
+  <div>
 
     <SEO title="Blog" />
     <div>

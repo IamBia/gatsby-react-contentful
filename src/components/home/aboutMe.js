@@ -4,7 +4,7 @@ import { injectIntl, FormattedMessage, FormattedHTMLMessage } from "gatsby-plugi
 
 const aboutMe = ({intl}) =>{
 return(
-<div className="full-height d-flex align-items-center p-2">
+<div className="d-flex align-items-center p-2">
 
 <div className="about py-5 d-none d-lg-block">
 
