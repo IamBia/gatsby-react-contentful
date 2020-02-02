@@ -33,6 +33,14 @@ h2{
     color: #00adb5;
 }
 
+h3{
+    font-size: 2rem;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #00adb5;
+}
+
 a{
     text-decoration: none !important;
 }
