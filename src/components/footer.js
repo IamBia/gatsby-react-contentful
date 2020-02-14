@@ -26,7 +26,7 @@ const footer = () => {
             <h2 className="d-flex  mb-3 headline justify-content-center justify-content-lg-start"><FormattedMessage id="connect me"/></h2>
             <ul className="d-flex flex-wrap justify-content-start pl-0">
               <li>
-                <a href="https://www.instagram.com/bia_dev/">
+                <a href="https://www.instagram.com/biadev/">
                 <span className="d-none d-lg-block">Instagram</span>
                   <i className="fab fa-instagram d-block d-lg-none"></i>
                 </a>
@@ -87,7 +87,7 @@ const footer = () => {
           <div className="col-12">
           <div className="credit h-100 py-3">
             <p className="credits text-center mt-auto">
-             <FormattedMessage id="credit"/><a href="https://instagram.com/bia_dev"> Bia</a>
+             <FormattedMessage id="credit"/><a href="https://instagram.com/biadev"> Bia</a>
             </p>
             </div>
           </div>

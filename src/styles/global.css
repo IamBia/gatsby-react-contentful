@@ -6,11 +6,17 @@
 
 /* global styles */
 
+:root{
+    --main-pink: #ff004d;
+    --main-blue: #00adb5;
+    --main-dark: #151515;
+}
+
 h1{
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #ff004d;
+    color: var(--main-pink);
     display: inline-block;
 }
 
@@ -30,7 +36,7 @@ h2{
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #00adb5;
+    color: var(--main-blue);;
 }
 
 h3{
@@ -38,7 +44,7 @@ h3{
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #00adb5;
+    color: var(--main-blue);;
 }
 
 a{
@@ -46,7 +52,7 @@ a{
 }
 a:hover,
 ul a:hover{
-    color: #ff004d;
+    color: var(--main-pink);;
 }
 
 nav ul a{
@@ -59,7 +65,7 @@ nav ul a{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #1e1e1e;
+    background-color: var(--main-dark);;
     color: #fff; 
     font-size: 18px;
     /* overflow-y: hidden; */
@@ -68,7 +74,7 @@ body{
 h1::selection,
 p::selection{
     color: #000;
-    background: #00adb5;
+    background: var(--main-blue);;
 }
 
 /* header */
@@ -121,8 +127,8 @@ li{
 }
 
 .blog{
-    height: 400px;
-    border: 2px solid #00adb5;
+    min-height: 430px;
+    border: 2px solid var(--main-blue);;
     padding: 20px;
     border-radius: 5px;
 }
@@ -159,8 +165,13 @@ article ul {
 /* projects */
 
 .portfolio{
-    height: 250px;
- 
+    height: 230px;
+    border-top: 1px solid; 
+}
+
+.port:last-child{
+    border-bottom: 1px solid; 
+    padding-bottom: 50px;
 }
 
 .portfolio h2{
@@ -168,20 +179,20 @@ article ul {
     font-size: 1.8rem;
 }
 .source_btn{
-    background-color: #1e1e1e;
+    background-color: var(--main-dark);;
     width: 25%;
     padding: 10px 55px;
     display: flex;
     align-items: center;
-    color: #00adb5;
-    border: 1px solid #00adb5;
+    color: var(--main-blue);;
+    border: 1px solid var(--main-blue);;
     justify-content: center;
 }
 
 
 
 .source_btn:hover, .blog:hover{
-    border: 1px solid #ff004d;
+    border: 1px solid var(--main-pink);;
     box-shadow: #000 2px 2px 2px;
     transition: ease-in-out .3s;
 }
@@ -225,7 +236,7 @@ footer ul li:first-child, footer ul li:last-child{
 }
 
 .credits a{
-    color: #ff004d;
+    color: var(--main-pink);;
 }
 @media screen and (max-width: 500px){
     .credits{
@@ -234,23 +245,23 @@ footer ul li:first-child, footer ul li:last-child{
 }
 
 .blue{
- color: #00adb5;
+ color: var(--main-blue);;
 }
 
 .pink{
-    color: #ff004d;
+    color: var(--main-pink);;
 }
 
 .instaLinks{
-    border: 1px solid #00adb5;
+    border: 1px solid var(--main-blue);;
     padding-bottom: 10px;
     padding-left: 10px;
 }
 
 .instaLinks:hover{
-    border: 1px solid #ff004d;
+    border: 1px solid var(--main-pink);;
 }
 
 .instaLinks:hover h2{
-    color: #ff004d;
+    color: var(--main-pink);;
 }

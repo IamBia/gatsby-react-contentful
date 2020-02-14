@@ -20,7 +20,7 @@ const projects = ({data, intl}) => {
         
         { portfolioContent.map(({ node: portfolio }, index) => 
         
-        <div className="col-12 col-md-6 col-lg-4 mb-5" key={index}>
+        <div className="col-12 mb-5 port" key={index}>
         {   
             <article className="portfolio d-flex flex-column">
             <h2>{portfolio.title}</h2>
