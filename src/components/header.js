@@ -45,6 +45,11 @@ import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
             >
               <FormattedMessage id="Projects"/>
             </Link>
+            <Link
+              to={`/setup/`}
+              className="li block mt-4 lg:inline-block lg:mt-0  pl-4"
+            > Setup
+            </Link>
           
         </ul>
         </div>

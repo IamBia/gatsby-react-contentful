@@ -68,19 +68,16 @@ const footer = () => {
         
         {/* <div className="row">
         <h3>Receive content on your e-mail</h3>
-        <div className="col-lg-8">
+
          <p>Subscribe to my newsletter to get notified every time I write a new article about design, development or personal projects. They will not be regular and I'll always try to give you the highest possible quality.</p>
           </div>
-           <div className="col-lg-4">
             <div id="mc_embed_signup">
-            <form action="https://gmail.us3.list-manage.com/subscribe/post?u=51c5e3ba068f0030571cef965&amp;id=849b525bdb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="https://gmail.us3.list-manage.com/subscribe/post?u=51c5e3ba068f0030571cef965&amp;id=870014b453" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
              <div id="mc_embed_signup_scroll">
-            	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required/>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"/></div>
+            	<input type="email" value="" name="EMAIL" className="email d-flex" id="mce-EMAIL" placeholder="email address" required/>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/></div>
             </div>
           </form>
-          </div>
-          </div>
           </div> */}
        
         <div className="row mt-auto">

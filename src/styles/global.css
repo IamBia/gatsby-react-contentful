@@ -62,6 +62,12 @@ nav ul a{
     color: #fff;
 }
 
+@media screen and (max-width: 800px){
+    nav ul a{
+        font-size: 1.6rem;
+    }
+}
+
 
 body{
     font-family: 'Poppins', sans-serif;
