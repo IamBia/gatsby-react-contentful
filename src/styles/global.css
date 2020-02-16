@@ -180,7 +180,8 @@ article ul {
     padding-bottom: 50px;
 }
 
-.portfolio h2{
+.portfolio h2,
+.setup h2{
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
 }
