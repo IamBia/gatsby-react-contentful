@@ -12,6 +12,10 @@
     --main-dark: #151515;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1{
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
@@ -26,10 +30,6 @@ h1{
     }
 }
 
-
-h1:hover{
-    color: #000;
-}
 
 h2{
     font-size: 2.5rem;
@@ -77,12 +77,6 @@ body{
     /* overflow-y: hidden; */
 }
 
-h1::selection,
-p::selection{
-    color: #000;
-    background: var(--main-blue);;
-}
-
 /* header */
 
 .logo{
@@ -96,8 +90,9 @@ li{
 
 /* front page */
 
-.hero {
-    height: 70vh;
+.hero{
+    height: 100vh;
+    position: relative;
 }
 
 @media screen and (max-width: 500px){
@@ -106,13 +101,57 @@ li{
     }
 }
 
+.hero__svg{
+    position: relative;
+}
+
+.hero__svg svg{
+    position: absolute;
+    right: -150px;
+}
 .hero h1{
-    font-size: 6rem;
+    font-size: 12rem;
+    color: #fff;
+}
+
+.hero span{
+    font-size: 12rem;
+    color: rgba(255, 255, 255, .1);
+    font-weight: 700;
+    margin-top: -150px;
+    margin-left: 150px;
+
 }
 
 .hero p{
     font-size: 2rem;
 }
+
+.neu-btn{
+    font-size: 30px;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 40px;
+    color: var(--main-pink) !important;
+    background-color: #151515;
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px #252525;
+    margin-right: 30px;
+    font-family: 'Bebas Neue';
+    font-weight: 800;
+  }
+
+  .neu-btn:hover {
+    box-shadow: inset 3px 3px 5px #000, inset -3px -3px 5px #252525;
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+  .neu-btn:active {
+    box-shadow: inset 3px 3px 5px #000, inset -3px -3px 5px #252525;
+    transform: scale(0.98);
+    color: #32363d;
+}
+
 
 /* about */
 
