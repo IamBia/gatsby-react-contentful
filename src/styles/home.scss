@@ -1,0 +1,105 @@
+.hero{
+    height: 100vh;
+    position: relative;
+    @include media-breakpoint-down(sm){
+        height: 90vh;
+    }
+    &__section{
+        a{
+            color: var(--main-pink);
+        }
+        &__svg{
+            position: relative;
+            svg{
+                position: absolute;
+                right: -150px;
+            }
+        }
+        h1{
+            font-size: 12rem;
+            color: #fff;
+        }
+        span{
+            font-size: 12rem;
+            color: rgba(255, 255, 255, .1);
+            font-weight: 700;
+            margin-top: -150px;
+            margin-left: 150px;
+        }
+        p{
+            font-size: 2rem;
+        }
+    } 
+    .neu-btn{
+        font-size: 30px;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 40px;
+        color: var(--main-pink) !important;
+        background-color: #151515;
+        box-shadow: 3px 3px 5px #000, -3px -3px 5px #252525;
+        margin-right: 30px;
+        font-family: 'Bebas Neue';
+        font-weight: 800;
+        &:hover{
+            box-shadow: inset 3px 3px 5px #000, inset -3px -3px 5px #252525;
+            transform: scale(0.98);
+            cursor: pointer;
+        }
+        
+        &:active{
+            box-shadow: inset 3px 3px 5px #000, inset -3px -3px 5px #252525;
+            transform: scale(0.98);
+            color: #32363d;
+        }
+    }
+}
+
+
+.about{
+    padding: 60px;
+    margin: 60px 0;
+    h2{
+        color: $pink !important;
+        line-height: .8;
+    }
+    &__bia-who{
+        color: #fff;
+        margin-left: 70px;
+    }
+    &__multiply-text{
+        color: rgba(255, 255, 255, 0.1) !important;
+        font-size: 7rem;
+        font-weight: 700;
+        position: absolute;
+        top: 60px;
+        margin-left: 15px;
+    }
+    &__paragraph{
+        margin-top: 100px;
+        padding-right: 100px;
+    }
+
+    &__block{
+        display: flex;
+        width: 250px;
+        height: 250px;
+        padding-bottom: 30px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px #000, -3px -3px 5px #252525;
+        &:hover{
+            box-shadow: inset 3px 3px 5px #000, inset -3px -3px 5px #252525;
+        }
+        &:hover{
+            h3{
+                margin-right: 0;
+                transition: ease-out .3s;
+            }
+        }
+        h3{
+            margin-right: -50px;
+        }
+    }
+}
+
+

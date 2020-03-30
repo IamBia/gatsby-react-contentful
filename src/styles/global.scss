@@ -1,0 +1,93 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../../node_modules/bootstrap/dist/scss/mixins/_breakpoints.scss';
+
+/* global styles */
+$pink: #ff004d;
+$dark: #151515;
+// $blue: #00adb5;
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $dark;
+    color: #fff; 
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: $pink;
+    display: inline-block;
+}
+
+@include media-breakpoint-down(sm){
+    h1{
+        font-size: 3rem !important;
+    }
+}
+
+
+h2{
+    font-size: 4rem;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2rem;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none !important;
+    &:hover{
+        color: $pink;
+    }
+}
+
+ul{
+    a{
+        &:hover{
+            color: var(--main-pink);;
+        }
+    }
+}
+
+nav{
+    ul{
+        a{
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: #fff;
+            
+            @include media-breakpoint-down(md){
+                font-size: 1.6rem;
+            }
+        }
+    }
+} 
+
+
+.pink{
+    color: $pink;
+}
+
+.instaLinks{
+    border: 1px solid $pink;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.instaLinks:hover{
+    border: 1px solid $pink;
+}
+
+.instaLinks:hover h2{
+    color: $pink;
+}

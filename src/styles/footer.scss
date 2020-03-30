@@ -1,0 +1,45 @@
+
+footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:800px){
+    footer{
+        height: 40vh;
+    }
+}
+
+footer ul li {
+    margin: 0 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+}
+
+footer ul li:first-child, footer ul li:last-child{
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 500px){
+    footer ul li {
+        margin: 10px 10px 0 10px;
+        font-size: 2rem;
+    }
+    
+    footer ul li:first-child, footer ul li:last-child{
+        margin-left: 10px;
+    }
+}
+
+.credits{
+    font-size: 1.2rem;
+}
+
+.credits a{
+    color: var(--main-pink);;
+}
+@media screen and (max-width: 500px){
+    .credits{
+        font-size: 1rem;
+    }
+}
