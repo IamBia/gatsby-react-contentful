@@ -1,70 +1,59 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/biadev-logo-black-small.jpeg"
-import Language from "../components/language";
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import Language from "./header/language";
+import { injectIntl } from "gatsby-plugin-intl"
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+// import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import Burger from "./header/burger";
+import Menu from "./header/Menu";
+import  { useState } from "react"
 
-
-  const Header =() =>{
-    return (
-      <div className="header">
-      <div className="top-bar d-flex justify-content-end py-2">
-      <Language/>
-      </div>
-    <nav className="justify-content-between row pb-6">
-      <div className="col-lg-3">
-        <div className=" d-flex align-items-center justify-content-center justify-content-lg-start mr-6 h-100">
-            <Link to="/" className="brand justify-content-center justify-content-lg-start d-flex">
-              <img src={logo} className="logo" alt="Bia Dev"></img>
-            </Link>
-        </div>
-      </div>
-      <div className="col-12 col-lg-9 d-flex justify-content-center justify-content-lg-end">
-        <ul className="d-flex justify-content-between">
-
-            <Link
-              to={`/`}
-              href="#responsive-header"
-              className="li block mt-4 lg:inline-block lg:mt-0  pr-4"
-            >
-              Home
-            </Link>
-            <Link
-              to={`/blog/`}
-              href="#responsive-header"
-              className="li block mt-4 lg:inline-block lg:mt-0  px-2"
-            >
-              Blog
-            </Link>
-            <Link
-              to={`/projects/`}
-              className="li block mt-4 lg:inline-block lg:mt-0  pl-4"
-            >
-              <FormattedMessage id="Projects"/>
-            </Link>
-            <Link
-              to={`/setup/`}
-              className="li block mt-4 lg:inline-block lg:mt-0  pl-4"
-            > Setup
-            </Link>
-          
-        </ul>
-        </div>
-    </nav>
-    </div>
-  )
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);  
+  const openHandler = () => {
+    if(!menuOpen){
+      setMenuOpen(true)
+    } else{
+      setMenuOpen(false)
     }
+  }
+  let menu;
+  
+  if(menuOpen){
+    menu = <Menu/>
+  }
+  
 
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default injectIntl(Header)
+  
+  return (
+    
+    <header className="header" >
+    {menu}
+    <div className="row">
+    <div className="col-6">
+    <Link to="/" className="brand justify-content-start d-flex">
+    <h1 className="logo mt-3">Biadev</h1>
+    </Link>
+    </div>
+    <div className="col-6">
+    <div className="header__navigation d-flex justify-content-end">
+    <Language/>
+    <Burger click={openHandler}/>
+    </div>
+    </div>
+    </div>
+    </header>
+    )
+  }
+  
+  Header.propTypes = {
+    siteTitle: PropTypes.string,
+  }
+  
+  Header.defaultProps = {
+    siteTitle: ``,
+  }
+  
+  export default injectIntl(Header)
+  

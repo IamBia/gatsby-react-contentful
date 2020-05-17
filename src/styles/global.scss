@@ -1,17 +1,21 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-// @import '../../node_modules/bootstrap/dist/scss/mixins/_breakpoints.scss';
 
 /* global styles */
 $pink: #ff004d;
 $dark: #151515;
+$white: #fff;
 // $blue: #00adb5;
-
+.tl-edges{
+    overflow-x: visible;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: $dark;
     color: #fff; 
     font-size: 18px;
     overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
 }
 
 h1{
@@ -34,6 +38,9 @@ h2{
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    @include media-breakpoint-down(sm){
+        font-size: 3rem;
+    }
 }
 
 h3{
@@ -79,15 +86,28 @@ nav{
 }
 
 .instaLinks{
+    font-size: 24px;
     border: 1px solid $pink;
     padding-bottom: 10px;
     padding-left: 10px;
-}
 
-.instaLinks:hover{
-    border: 1px solid $pink;
-}
 
-.instaLinks:hover h2{
-    color: $pink;
+        @include media-breakpoint-down(sm){
+            padding: 15px;
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+
+    a{
+        color: #fff;
+
+        &:hover{
+            color: $dark;
+        }
+    }
+
+    &:hover{
+        background-color: $pink;
+    }
 }

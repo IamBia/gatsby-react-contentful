@@ -1,7 +1,11 @@
 
 .portfolio{
-    height: 230px;
+    height: 100%;
     border-top: 1px solid; 
+    h2{
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8rem;
+    }
 }
 
 .port:last-child{
@@ -9,14 +13,16 @@
     padding-bottom: 50px;
 }
 
-.portfolio h2,
-.setup h2{
+.setup{
+     h2{
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
 }
-.source_btn{
+}
+
+.neu_btn{
     background-color: var(--main-dark);;
-    width: 25%;
+    max-width: 25%;
     padding: 10px 55px;
     display: flex;
     align-items: center;
@@ -27,7 +33,7 @@
 
 
 
-.source_btn:hover, .blog:hover{
+.blog:hover{
     border: 1px solid var(--main-pink);;
     box-shadow: #000 2px 2px 2px;
     transition: ease-in-out .3s;

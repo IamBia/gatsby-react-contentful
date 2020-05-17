@@ -1,48 +1,51 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
-import Layout from "../components/layout"
-
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
-
-// import Layout from "../components/layout";
+import { injectIntl } from "gatsby-plugin-intl"
+// import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+// import AniLink from "gatsby-plugin-transition-link/AniLink" 
+// import { array } from "prop-types"
 
 const blog = ({data}) => {
-
 const postContent = data.allContentfulPost.edges;
+
+console.log(postContent);
   return (
-    <Layout>
-  <div>
 
-    <SEO title="Blog" />
-    <div>
-    <h1 className="mb-5">Blog</h1>
-    <div className="row mb-5">
+    <div className="blog">
+    <SEO title="Blog"/>
+        <div>
+        <h1 className="mb-5">Blog</h1>
+              {
+              postContent.map(({ node: post }) => (
     
-      { postContent.map(({ node: post }, index) => 
+                  <div className="row blog--row">
+                       <div className="col-lg-6 order-2 order-lg-1">
+                        <Link  to={`/blog/${post.slug}/`}>
+                         <article className="blog__page d-flex flex-column" key={post.id}>
+                            <img src={post.image.fluid.src} alt={post.title}></img>
+                         </article>
+                        </Link>    
+                      </div>
 
-          <div className="col-12 col-md-6 mb-5" key={index}>
-            {
-              <Link to={`/blog/${post.slug}/`}>
-              <article className="blog d-flex flex-column" key={post.id}>
-                <img src={post.image.fluid.src} alt={post.title}></img>
-                <h2>{post.title}</h2>
-                
-                <p className="mb-3">{post.subtitle}</p>
-                <p className="author uppercase mt-auto"><FormattedMessage id="author"/>: {post.author}</p>
-                {/* <div dangerouslySetInnerHTML={{__html: post.content.childContentfulRichText.html}}></div> */}
-              </article>
-            </Link>    
-              }
-          </div>
-      )}
-    </div>
-    </div>
+                      <div className="col-lg-6 order-2 order-lg-2">
+                        <div className="blog__page--info">
+                        <h2>{post.title}</h2>
+                          <p className="mb-3">{post.subtitle}</p>
+                        
+                          <Link to={`/blog/${post.slug}/`} className="mt-auto"><div className="neu-btn">Read more</div></Link>
+                        </div>
+                      </div>
+                  </div>
+                   
+              )
+              )}
+            </div>
+        </div>
 
-    </div>
-    </Layout>
   )
-  }
+          }      
+
 export default injectIntl(blog)
 
 
@@ -60,11 +63,6 @@ query pageQuery($locale: String){
       image{
         fluid{
           src
-        }
-      }
-      content{
-        childContentfulRichText{
-          html
         }
       }
     }

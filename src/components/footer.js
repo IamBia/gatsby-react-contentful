@@ -11,19 +11,14 @@ dom.watch()
 library.add(fab, fas, faInstagram, faCamera)
 
 const footer = () => {
-  const footer = {
-    color: '#fff',
-    margin: `0 auto`,
-    maxWidth: 960,
-    padding: `0px 1.0875rem 1.45rem`
-    }
+
 
   return (
-    <footer style={footer}>
+    <footer className="footer mt-lg-5">
         <div className="row pb-4">
           <div className="col-12">
-          <div className="d-flex flex-column">
-            <h2 className="d-flex  mb-3 headline justify-content-center justify-content-lg-start"><FormattedMessage id="connect me"/></h2>
+          <div className="footer__wrapper">
+            <h2><span className="pink">Lets.</span> get social</h2>
             <ul className="d-flex flex-wrap justify-content-start pl-0">
               <li>
                 <a href="https://www.instagram.com/biadev/">
@@ -65,25 +60,11 @@ const footer = () => {
           </div>
           </div>
         </div>
-        
-        {/* <div className="row">
-        <h3>Receive content on your e-mail</h3>
-
-         <p>Subscribe to my newsletter to get notified every time I write a new article about design, development or personal projects. They will not be regular and I'll always try to give you the highest possible quality.</p>
-          </div>
-            <div id="mc_embed_signup">
-            <form action="https://gmail.us3.list-manage.com/subscribe/post?u=51c5e3ba068f0030571cef965&amp;id=870014b453" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-             <div id="mc_embed_signup_scroll">
-            	<input type="email" value="" name="EMAIL" className="email d-flex" id="mce-EMAIL" placeholder="email address" required/>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/></div>
-            </div>
-          </form>
-          </div> */}
        
         <div className="row mt-auto">
           <div className="col-12">
-          <div className="credit h-100 py-3">
-            <p className="credits text-center mt-auto">
+          <div className="credit pt-5 justify-content-center justify-content-lg-end d-flex">
+            <p className="credits mt-auto">
              <FormattedMessage id="credit"/><a href="https://instagram.com/biadev"> Bia</a>
             </p>
             </div>

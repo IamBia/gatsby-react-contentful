@@ -1,18 +1,28 @@
 import React from "react"
-import Layout from "../components/layout"
 import AboutMe from "../components/home/aboutMe"
 import Hero from "../components/home/hero"
+import Stack from "../components/home/stack"
+// import Newsletter from "../components/home/newsletter"
+import Footer from "../components/footer"
+
 
 // import { injectIntl, FormattedMessage, FormattedHTMLMessage } from "gatsby-plugin-intl"
 
 
-const IndexPage = ({intl}) => (
-  
-  <Layout>
+const IndexPage = ({intl}) => {
+ 
+  return(
+  <div>
   <Hero/>
   <AboutMe/>
-  </Layout>
+  <Stack/>
+  {/* <Newsletter/> */}
+  <Footer/>
+
+    </div>
+  
 )
+  }
 
 export default IndexPage
 

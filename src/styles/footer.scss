@@ -1,45 +1,77 @@
 
-footer{
-    height: 40vh;
+.footer{
     display: flex;
     flex-direction: column;
-}
-@media screen and (max-width:800px){
+    justify-content: center;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            @include media-breakpoint-down(sm){
+                font-size: 2.8rem;
+            }
+        }
+
+        ul{
+            list-style: none;
+            a{
+                color: #fff;
+                font-weight: 600;
+                &:hover{
+                    color: $pink;
+                }
+        }
+            }
+        }
+    }
+
+
+@include media-breakpoint-down(sm){
     footer{
         height: 40vh;
     }
 }
 
-footer ul li {
-    margin: 0 15px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-}
+footer{
+    ul{
+        li{
+            margin: 0 15px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            &:first-child{
+                margin-left: 0px;
+            }
+            &:last-child{
+                margin-left: 0px;
+            }
+            @include media-breakpoint-down(sm){
+                margin: 10px 10px 0 10px;
+                font-size: 2rem;
 
-footer ul li:first-child, footer ul li:last-child{
-    margin-left: 0px;
+                &:first-child{
+                    margin-left: 0px;
+                }
+                &:last-child{
+                      margin-left: 0px;
+            }
+        }
+    }
 }
-
-@media screen and (max-width: 500px){
-    footer ul li {
-        margin: 10px 10px 0 10px;
-        font-size: 2rem;
-    }
-    
-    footer ul li:first-child, footer ul li:last-child{
-        margin-left: 10px;
-    }
 }
 
 .credits{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.credits a{
-    color: var(--main-pink);;
-}
-@media screen and (max-width: 500px){
-    .credits{
-        font-size: 1rem;
+.credits { 
+    a {
+    color: var(--main-pink);
+    @include media-breakpoint-down(sm){
+            font-size: 1rem;
+    }
     }
 }

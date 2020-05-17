@@ -4,15 +4,13 @@ import SEO from "../components/seo"
 // import Header from "../components/header";
 // import Footer from "../components/footer";
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
-import Layout from "../components/layout";
 
 
 
 const projects = ({data, intl}) => {
     const portfolioContent = data.allContentfulPortfolio.edges;
     return (
-        <Layout>
-        <div>
+        <div className="mt-5">
       
         <SEO title={intl.formatMessage({ id: "Projects" })} />
         <h1 className="mb-5 text-center"><FormattedMessage id="Projects"/></h1>
@@ -25,20 +23,16 @@ const projects = ({data, intl}) => {
             <article className="portfolio d-flex flex-column">
             <h2>{portfolio.title}</h2>
             <p className="mt-2">{portfolio.description.description}</p>
-            <a className="source_btn mt-3 mt-md-auto" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>
+            <a className="neu-btn mt-3 mt-md-auto" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>
             </article>
             
         }
         </div>
         )}
         
+        </div>   
         </div>
-       
-      
-        </div>
-        
-        </Layout>
-        
+
         )
     }
     

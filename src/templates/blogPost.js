@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
@@ -9,7 +8,7 @@ const { title, author, image, content } = data.contentfulPost;
 
 
   return (
-    <Layout>
+ 
     <div className="row my-5">
       <div className="col-12">
       <div className="blog-post d-flex flex-column">
@@ -24,7 +23,7 @@ const { title, author, image, content } = data.contentfulPost;
          
       </div>  
     </div>
-    </Layout>
+
    
   
   )
