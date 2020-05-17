@@ -90,6 +90,11 @@
         color: #fff;
         margin-left: 70px;
     }
+    &__photo{
+        @include media-breakpoint-down(md){
+            height: 400px;
+        }
+    }
     &__multiply-text{
         color: rgba(255, 255, 255, 0.1) !important;
         font-size: 7rem;

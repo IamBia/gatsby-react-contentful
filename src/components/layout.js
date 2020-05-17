@@ -13,14 +13,15 @@ const Layout = ({ children }) => {
   return (
     <>
 
-      <div className="container"
+      <div className="container main-container"
         style={{
           margin: `0 auto`,
           maxWidth: '1300px',
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
           height: `100%`,
-          width: `100%`
+          width: `100%`,
+          overflowX: `hidden`
         }}>
          <Header />
 

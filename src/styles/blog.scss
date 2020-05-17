@@ -41,8 +41,14 @@
         margin-top: 40px;
     }
 &--row{
+    &:first-of-type{
+        padding-top: 0;
+    }
     margin: 60px 0;
     padding: 60px 0;
+    @include media-breakpoint-down(md){
+        margin: 0;
+    }
 }
     &__page{
             img{

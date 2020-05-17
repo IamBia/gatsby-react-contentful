@@ -11,14 +11,6 @@ li{
     padding: 5px;
 }
 
-.handler{
-    @include media-breakpoint-down(lg){
-        position: fixed;
-        top: 60px;
-        right: 15px;
-    }
-}
-
 .header__navigation{
     @include media-breakpoint-down(sm){
         flex-direction: column;
@@ -33,7 +25,6 @@ li{
     }
     
     button{
-        outline: none;
         &:first-of-type{
             border: $pink 1px solid;
             border-radius: 0.625rem 0 0 .625rem;
