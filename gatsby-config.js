@@ -88,20 +88,15 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`400`, `600`, `700`, `800`, `900`]
-          },
-          {
-            family: `Bebas+Neue`,
-            subsets: [`latin`]
-          },
+        fonts: [ 
+            'Poppins\:400,600,700,800,900',
+            'Bebas+Neue', 
         ],
       },
     },
+
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {

@@ -6,6 +6,7 @@ import '../styles/main.scss'
 
 import Header from "./header"
 import "./layout.scss"
+// import "./../styles/global.scss"
 
 
 const Layout = ({ children }) => {

@@ -63,7 +63,7 @@ const footer = () => {
        
         <div className="row mt-auto">
           <div className="col-12">
-          <div className="credit pt-5 justify-content-center justify-content-lg-end d-flex">
+          <div className="credit pt-5 justify-content-center d-flex">
             <p className="credits mt-auto">
              <FormattedMessage id="credit"/><a href="https://instagram.com/biadev"> Bia</a>
             </p>

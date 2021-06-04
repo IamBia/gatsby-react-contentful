@@ -8,7 +8,7 @@ const stack = () => {
                     <div className="stack__blob">
                         <div className="stack__blob--text">
                             <h2><span className="front">Front.</span><br/><span className="text-stack">Stack</span></h2>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
+                            <p>Javascript, ReactJS, React Native, Laravel, WordPress, SASS, BEM.</p>
                         </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="150%" height="800" viewBox="0 0 1397 1330">
                         <g id="_1" data-name="1" transform="translate(180.082 199.655)">
