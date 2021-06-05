@@ -5,7 +5,10 @@ const stack = () => {
         <div className="stack">
             <div className="row">
                 <div className="col-md-6">
-                    <div className="stack__blob">
+                    <div className="stack__blob"   data-sal="slide-right"
+              data-sal-duration="1000"
+              data-sal-delay="0"
+              data-sal-easing="ease">
                         <div className="stack__blob--text">
                             <h2><span className="front">Front.</span><br/><span className="text-stack">Stack</span></h2>
                             <p>Javascript, ReactJS, React Native, Laravel, WordPress, SASS, BEM.</p>

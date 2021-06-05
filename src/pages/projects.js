@@ -20,7 +20,10 @@ const projects = ({data, intl}) => {
         
         <div className="col-12 mb-5 port" key={index}>
         {   
-            <article className="portfolio d-flex flex-column">
+            <article className="portfolio d-flex flex-column"   data-sal="slide-up"
+            data-sal-duration="1000"
+            data-sal-delay="100"
+            data-sal-easing="ease">
             <h2>{portfolio.title}</h2>
             <p className="mt-2">{portfolio.description.description}</p>
             <a className="neu-btn mt-3 mt-md-auto" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>

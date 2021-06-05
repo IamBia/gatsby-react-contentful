@@ -19,7 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
     // we use the provided allContentfulBlogPost query to fetch the data from Contentful
    
-   const mygraph =  graphql(
+   const mygraph =      (
         `
         {
             allContentfulPost {
