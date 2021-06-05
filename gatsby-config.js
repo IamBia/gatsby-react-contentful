@@ -1,6 +1,6 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env`,
-});
+})
 
 module.exports = {
   siteMetadata: {
@@ -9,37 +9,35 @@ module.exports = {
     author: `Bianca Schuurman`,
   },
   plugins: [
-    `gatsby-plugin-scroll-reveal`,
     {
-    resolve: `gatsby-plugin-scroll-reveal`,
-    options: {
-        threshold: 0.3, // Percentage of an element's area that needs to be visible to launch animation
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 0.5, // Percentage of an element's area that needs to be visible to launch animation
         once: true, // Defines if animation needs to be launched once
         disable: false, // Flag for disabling animations
 
         // Advanced Options
-        selector: '[data-sal]', // Selector of the elements to be animated
-        animateClassName: 'sal-animate', // Class name which triggers animation
-        disabledClassName: 'sal-disabled', // Class name which defines the disabled state
-        rootMargin: '0% 50%', // Corresponds to root's bounding box margin
-        enterEventName: 'sal:in', // Enter event name
-        exitEventName: 'sal:out', // Exit event name
-
-    }
-  },
-    
+        selector: "[data-sal]", // Selector of the elements to be animated
+        animateClassName: "sal-animate", // Class name which triggers animation
+        disabledClassName: "sal-disabled", // Class name which defines the disabled state
+        rootMargin: "0% 50%", // Corresponds to root's bounding box margin
+        enterEventName: "sal:in", // Enter event name
+        exitEventName: "sal:out", // Exit event name
+      },
+    },
+    `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `@contentful/gatsby-transformer-contentful-richtext`,
     `gatsby-plugin-sass`,
-    'gatsby-plugin-transition-link',
+    "gatsby-plugin-transition-link",
     {
-      resolve: `gatsby-plugin-layout`,
+      resolve: "gatsby-plugin-page-transitions",
       options: {
-        component: require.resolve('./src/components/layout.js')
-      }
+        transitionTime: 500,
+      },
     },
-    
+
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -59,14 +57,14 @@ module.exports = {
         background_color: `#1e1e1e`,
         theme_color: `#1e1e1e`,
         display: `minimal-ui`,
-        favicon: 'yes',
+        favicon: "yes",
         lang: `en`,
-        localize:[
+        localize: [
           {
             start_url: `/pt-BR/`,
             lang: `pt-BR`,
-          }
-        ]
+          },
+        ],
       },
     },
     {
@@ -80,7 +78,7 @@ module.exports = {
       options: {
         spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
         accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-intl`,
@@ -95,24 +93,26 @@ module.exports = {
         redirect: true,
       },
     },
-    { 
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true, // Print removed selectors and processed file names
         develop: true, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
-        whitelist: ['whitelist'], // Don't remove this selector
-        ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        purgeOnly : ['components/', '/global.css', 'node_modules/bootstrap', 'tailwindcss'], // Purge only these files/folders
-      }
+        whitelist: ["whitelist"], // Don't remove this selector
+        ignore: ["/ignored.css", "prismjs/", "docsearch.js/"], // Ignore files/folders
+        purgeOnly: [
+          "components/",
+          "/global.css",
+          "node_modules/bootstrap",
+          "tailwindcss",
+        ], // Purge only these files/folders
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [ 
-            'Poppins\:400,600,700,800,900',
-            'Bebas+Neue', 
-        ],
+        fonts: ["Poppins:400,600,700,800,900", "Bebas+Neue"],
       },
     },
 
@@ -120,11 +120,11 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: `${process.env.ID}`,
-        
+
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false,
-        
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         // Defaults to null
@@ -135,7 +135,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trakingID: `${process.env.GOOGLE_ANALYTICS_TRACKING_ID}`,
-      }
-    }
+      },
+    },
   ],
 }

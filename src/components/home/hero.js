@@ -19,19 +19,38 @@ const Hero = ({ intl }) => {
       <SEO title={intl.formatMessage({ id: "title" })} />
       <div className="row h-100">
         <div className="col-12 col-md-6">
-          <div
-            className="hero__section d-flex flex-column upercase justify-content-center h-100 align-content-start"
-            data-sal="slide-up"
-            data-sal-duration="2000"
-            data-sal-delay="200"
-            data-sal-easing="ease"
-          >
-            <h1>Bia.</h1>
-            <span>Dev</span>
-            <p>
+          <div className="hero__section d-flex flex-column upercase justify-content-center h-100 align-content-start">
+            <h1
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-delay="100"
+              data-sal-easing="ease"
+            >
+              Bia.
+            </h1>
+            <span
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              Dev
+            </span>
+            <p
+              data-sal="slide-up"
+              data-sal-duration="2000"
+              data-sal-delay="500"
+              data-sal-easing="ease"
+            >
               <FormattedMessage id="fullstack developer" />
             </p>
-            <div className="hero__buttons d-flex mt-5">
+            <div
+              className="hero__buttons d-flex mt-5"
+              data-sal="slide-up"
+              data-sal-duration="2000"
+              data-sal-delay="700"
+              data-sal-easing="ease"
+            >
               <Link to="/blog" className="neu-btn">
                 Blog
               </Link>
@@ -54,8 +73,8 @@ const Hero = ({ intl }) => {
               src={laptops}
               alt="laptop"
               data-sal="slide-down"
-              data-sal-duration="1000"
-              data-sal-delay="100"
+              data-sal-duration="2000"
+              data-sal-delay="200"
               data-sal-easing="ease"
             ></img>
             <Grid />
