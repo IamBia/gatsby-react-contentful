@@ -23,8 +23,6 @@ const { title, author, image, content } = data.contentfulPost;
          
       </div>  
     </div>
-
-   
   
   )
   }

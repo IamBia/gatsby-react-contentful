@@ -15,17 +15,17 @@ const blog = ({ data }) => {
       <SEO title="Blog" />
       <div>
         <h1 className="mb-5">Blog</h1>
-        <div className="row" >
+        <div className="row">
           {postContent.map(({ node: post }) => (
-            <div className="col-lg-4" data-sal="slide-up"
-            data-sal-duration="1000"
-            data-sal-delay="100"
-            data-sal-easing="ease">
-              <div
-                className="blog--row"
-                
-              >
-                <div >
+            <div
+              className="col-lg-4"
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-delay="100"
+              data-sal-easing="ease"
+            >
+              <div className="blog--row">
+                <div>
                   <Link to={`/blog/${post.slug}/`}>
                     <article
                       className="blog__page d-flex flex-column"

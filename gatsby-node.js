@@ -1,27 +1,26 @@
-const path = require(`path`);
+const path = require(`path`)
 // const slash = require(`slash`);
-const mygraph = require('graphql');
+const mygraph = require("graphql")
 
 exports.onCreatePage = ({ page, actions }) => {
-    const { createPage, deletePage } = actions
-    deletePage(page)
-    // You can access the variable "locale" in your page queries now
-    createPage({
-      ...page,
-      context: {
-        ...page.context,
-        locale: page.context.intl.language
-      },
-    })
-  }
+  const { createPage, deletePage } = actions
+  deletePage(page)
+  // You can access the variable "locale" in your page queries now
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      locale: page.context.intl.language,
+    },
+  })
+}
 
-exports.createPages = ({ graphql, actions }) => {
-    const { createPage } = actions;
-    // we use the provided allContentfulBlogPost query to fetch the data from Contentful
-   
-   const mygraph =      (
-        `
-        {
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  // we use the provided allContentfulBlogPost query to fetch the data from Contentful
+
+  const mygraph = await graphql(
+        `{
             allContentfulPost {
                 edges {
                     node {
@@ -46,35 +45,30 @@ exports.createPages = ({ graphql, actions }) => {
                 }
             }
         }
-    
-    `
-    ).then(result => {
-        if (result.errors) {
-            console.log("Error retrieving contentful data", result.errors);
-        }
-        
-        // Resolve the paths to our template
-        const blogPost = path.resolve(`src/templates/blogPost.js`);
-        
-        // Then for each result we create a page.
-        result.data.allContentfulPost.edges.forEach(edge => {
-            
-            createPage({
-                path: `/blog/${edge.node.slug}/`,
-                component: blogPost,
-                id: edge.node.id,
-                context: {
-                slug: edge.node.slug
-                },
-            });
-        });
+    `)
+    .then(result => {
+      if (result.errors) {
+        console.log("Error retrieving contentful data", result.errors)
+      }
+
+      // Resolve the paths to our template
+      const blogPost = path.resolve(`./src/templates/blogPost.js`)
+
+      // Then for each result we create a page.
+      result.data.allContentfulPost.edges.forEach(edge => {
+        createPage({
+          path: `/blog/${edge.node.slug}/`,
+          component: blogPost,
+          id: edge.node.id,
+          context: {
+            slug: edge.node.slug,
+          },
+        })
+      })
     })
     .catch(error => {
-        console.log("Error retrieving contentful data", error);
-    });
+      console.log("Error retrieving contentful data", error)
+    })
+}
 
-    
-};
-
-
-// npm 
+// npm
