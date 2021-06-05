@@ -26,7 +26,7 @@ const aboutMe = () => {
             data-sal-delay="100"
             data-sal-easing="ease"
           >
-            Bianca <br />
+            Bianca Schuurman <br />
             <span
               className="about__bia-who"
               data-sal="slide-left"

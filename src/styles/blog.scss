@@ -59,12 +59,10 @@
              display: flex;
              flex-direction: column;
              height: 100%;
+             min-height: 250px;
              h2{
-                 font-size: 2rem;
+                 font-size: 1.6rem;
                  margin-bottom: 30px;
-                 @include media-breakpoint-down(md){
-                     font-size: 2rem;
-                 }
              }
 
              .neu-btn{
