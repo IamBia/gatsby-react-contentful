@@ -12,7 +12,7 @@ const setup = ( ) => {
         <div className="col-12 mb-5">
             <article className="setup d-flex flex-column">
             <h2>Laptop</h2>
-            <p className="mt-2">Macbook Pro 15" (2015)</p>
+            <p className="mt-2">Macbook Pro 16" (2019)</p>
 
             <h2>Editor</h2>
             <p className="mt-2">VS Code</p>
@@ -23,14 +23,11 @@ const setup = ( ) => {
             <h2>Mouse</h2>
             <p className="mt-2">VicTsing Multi-mode Wireless Mouse</p>
 
-            <h2>Mousepad</h2>
-            <p className="mt-2"> Work Smarter - Visual Studio Code Shortcut Mousepad - Mac</p>
-
             <h2>Keyboard</h2>
             <p className="mt-2">Apple Magic Keyboard with Numeric Keypad - Space Gray</p>
 
-            <h2>Earbuds</h2>
-            <p className="mt-2">Mpow T5/M5 aptX True Wireless Earbuds with cVc 8.0 Noise Cancellation</p>
+            <h2>Headphones</h2>
+            <p className="mt-2">Sony WH-1000XM3</p>
 
             </article>
         </div>

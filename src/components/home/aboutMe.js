@@ -17,7 +17,8 @@ const aboutMe = () => {
             data-sal-delay="200"
             data-sal-easing="ease"
           >
-            <img className="img-fluid" src={bia} alt="bianca"></img>
+         
+            {/* <img className="img-fluid" src={bia} alt="bianca"></img> */}
           </div>
         </div>
         <div className="col-md-7">

@@ -96,10 +96,20 @@
   &__bia-who {
     color: $white;
     font-size: 3rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
   }
   &__photo {
+    background-image: url("../images/bia-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
     @include media-breakpoint-down(md) {
       height: 400px;
+      margin-bottom: 30px;
     }
   }
   // &__multiply-text{
@@ -224,4 +234,8 @@
 
 .insta-feed {
   margin: 120px 0;
+
+  @include media-breakpoint-down(md) {
+    margin: 30px 0;
+  }
 }

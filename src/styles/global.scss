@@ -101,10 +101,10 @@ p {
 }
 
 .instaLinks {
-  font-size: 24px;
-  border: 1px solid $pink;
+  font-size: 20px;
+  // border: 1px solid $pink;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 0px;
 
   @include media-breakpoint-down(sm) {
     padding: 15px;
