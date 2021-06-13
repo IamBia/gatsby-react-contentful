@@ -27,7 +27,7 @@ const languageClick = (e, language) => {
               onClick={e => languageClick(e, language)}
               style={{
                 color: currentLocale === language ? `white` : `#ff004d`,
-                backgroundColor: currentLocale === language ? `#ff004d` : `#151515`,
+                backgroundColor: currentLocale === language ? `#ff004d` : `#101820`,
                 margin: 10,
                 cursor: `pointer`,
               }}

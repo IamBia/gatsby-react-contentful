@@ -18,7 +18,7 @@ const projects = ({data, intl}) => {
         
         { portfolioContent.map(({ node: portfolio }, index) => 
         
-        <div className="col-12 mb-5 port" key={index}>
+        <div className="col-lg-3 mb-5 port" key={index}>
         {   
             <article className="portfolio d-flex flex-column"   data-sal="slide-up"
             data-sal-duration="1000"
@@ -26,7 +26,7 @@ const projects = ({data, intl}) => {
             data-sal-easing="ease">
             <h2>{portfolio.title}</h2>
             <p className="mt-2">{portfolio.description.description}</p>
-            <a className="neu-btn mt-3 mt-md-auto" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>
+            <a className="neu-btn mt-3 mt-md-auto neu_btn" href={portfolio.link}><i className="fab fa-github mr-2"></i> Source</a>
             </article>
             
         }

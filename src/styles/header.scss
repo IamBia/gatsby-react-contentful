@@ -1,10 +1,10 @@
 /* header */
+
+
 .logo{
     color: #fff;
-    font-size: 40px;
-    @include media-breakpoint-down(md){
-        font-size: 20px;
-    }
+    font-size: 30px !important;
+
 }
 
 li{
@@ -56,7 +56,7 @@ li{
     width: 100%;
     min-height: 100%;
     z-index: 10;
-    background-color: #151515;
+    background-color: $dark;
     position: fixed;
     top: 0;
     left: 0;
@@ -94,7 +94,7 @@ li{
             
             li{
                 font-size: 2.5rem;
-                font-family: 'Poppins', sans-serif;
+                font-family: $primary-font;
                 font-weight: 700;
                 color: $white;
                 

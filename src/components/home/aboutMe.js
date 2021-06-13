@@ -1,5 +1,6 @@
 import React from "react"
 import bia from "../../images/bia.png"
+import Stack from "../home/stack"
 
 // import { injectIntl, FormattedMessage, FormattedHTMLMessage } from "gatsby-plugin-intl"
 // import SEO from "../seo"
@@ -34,18 +35,10 @@ const aboutMe = () => {
               data-sal-delay="300"
               data-sal-easing="ease"
             >
-              Front-end
+              Front-end Developer
             </span>
           </h2>
-          <span
-            className="about__multiply-text"
-            data-sal="slide-left"
-            data-sal-duration="1000"
-            data-sal-delay="500"
-            data-sal-easing="ease"
-          >
-            Developer
-          </span>
+    
           <p
             className="about__paragraph"
             data-sal="slide-left"
@@ -60,8 +53,11 @@ const aboutMe = () => {
             in the projects I am involved with and make sure it is done with
             excellence and effectiveness.
           </p>
+          <Stack/>
         </div>
+  
       </div>
+    
     </div>
   )
 }

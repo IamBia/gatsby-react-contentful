@@ -26,7 +26,7 @@ const Hero = ({ intl }) => {
               data-sal-delay="100"
               data-sal-easing="ease"
             >
-              Bia.
+              Bianca
             </h1>
             <span
               data-sal="slide-up"
@@ -34,7 +34,7 @@ const Hero = ({ intl }) => {
               data-sal-delay="300"
               data-sal-easing="ease"
             >
-              Dev
+              Schuurman
             </span>
             <p
               data-sal="slide-up"

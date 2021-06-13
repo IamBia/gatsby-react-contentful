@@ -3,7 +3,7 @@
     height: 100%;
     border-top: 1px solid; 
     h2{
-        font-family: "Poppins", sans-serif;
+        font-family: $primary-font;
         font-size: 1.8rem;
     }
 }
@@ -15,20 +15,17 @@
 
 .setup{
      h2{
-    font-family: "Poppins", sans-serif;
+    font-family: $primary-font;
     font-size: 1.8rem;
 }
 }
 
 .neu_btn{
-    background-color: var(--main-dark);;
-    max-width: 25%;
+    background-color: var(--main-dark);
+    max-width: 100%;
+    width: 100%;
     padding: 10px 55px;
-    display: flex;
-    align-items: center;
-    color: var(--main-blue);;
-    border: 1px solid var(--main-blue);;
-    justify-content: center;
+
 }
 
 

@@ -50,12 +50,6 @@ const footer = () => {
                   <i className="fab fa-linkedin d-block d-lg-none"></i>
                 </a>
               </li>
-              <li>
-                <a href="https://unsplash.com/@bia_dev">
-                     <span className="d-none d-lg-block">Unsplash</span>
-                  <i className="fas fa-camera d-block d-lg-none"></i>
-                </a>
-              </li>
             </ul>
           </div>
           </div>

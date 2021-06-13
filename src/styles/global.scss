@@ -1,122 +1,127 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 /* global styles */
 $pink: #ff004d;
-$dark: #151515;
+$dark: #101820;
 $white: #fff;
+$grey: rgba(255, 255, 255, 0.5);
+
+$primary-font: "Neue Machina", sans-serif;
+$secondary-font: "Telegraf", sans-serif;
 // $blue: #00adb5;
-.tl-edges{
-    overflow-x: visible;
+.tl-edges {
+  overflow-x: visible;
 }
 
-.main-container{
-    @include media-breakpoint-down(lg){
-        padding: 0;
-    }
-    @include media-breakpoint-up(lg){
-        overflow-x: visible !important;
-    }
+.main-container {
+  @include media-breakpoint-down(lg) {
+    padding: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    overflow-x: visible !important;
+  }
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: $dark;
-    color: #fff; 
-    font-size: 18px;
-    overflow-x: hidden;
-    width: 100%;
-    min-height: 100%;
+body {
+  font-family: $primary-font;
+  background-color: $dark;
+  color: #fff;
+  font-size: 18px;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100%;
 }
 
-h1{
-    font-size: 4rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+h1 {
+  font-size: 4rem;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $pink;
+  display: inline-block;
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  margin-top: 15px;
+  font-family: $primary-font;
+  font-weight: 700;
+  @include media-breakpoint-down(sm) {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 15px;
+  font-family: $primary-font;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none !important;
+  &:hover {
     color: $pink;
-    display: inline-block;
+  }
 }
 
-@include media-breakpoint-down(sm){
-    h1{
-        font-size: 3rem !important;
+ul {
+  a {
+    &:hover {
+      color: var(--main-pink);
     }
+  }
 }
 
+nav {
+  ul {
+    a {
+      text-transform: uppercase;
+      font-family: $secondary-font;
+      font-size: 2rem;
+      color: #fff;
 
-h2{
-    font-size: 4rem;
-    margin-top: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    @include media-breakpoint-down(sm){
-        font-size: 3rem;
+      @include media-breakpoint-down(md) {
+        font-size: 1.6rem;
+      }
     }
+  }
 }
 
-h3{
-    font-size: 2rem;
-    margin-top: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+p {
+  color: $grey;
 }
 
-a{
-    text-decoration: none !important;
-    &:hover{
-        color: $pink;
-    }
+.pink {
+  color: $pink;
 }
 
-ul{
-    a{
-        &:hover{
-            color: var(--main-pink);;
-        }
+.instaLinks {
+  font-size: 24px;
+  border: 1px solid $pink;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px;
+    h3 {
+      font-size: 1.5rem;
     }
-}
+  }
 
-nav{
-    ul{
-        a{
-            text-transform: uppercase;
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 2rem;
-            color: #fff;
-            
-            @include media-breakpoint-down(md){
-                font-size: 1.6rem;
-            }
-        }
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $dark;
     }
-} 
+  }
 
-
-.pink{
-    color: $pink;
-}
-
-.instaLinks{
-    font-size: 24px;
-    border: 1px solid $pink;
-    padding-bottom: 10px;
-    padding-left: 10px;
-
-
-        @include media-breakpoint-down(sm){
-            padding: 15px;
-            h3{
-                font-size: 1.5rem;
-            }
-        }
-
-    a{
-        color: #fff;
-
-        &:hover{
-            color: $dark;
-        }
-    }
-
-    &:hover{
-        background-color: $pink;
-    }
+  &:hover {
+    background-color: $pink;
+  }
 }

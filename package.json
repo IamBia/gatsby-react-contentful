@@ -40,6 +40,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
+    "react-ig-feed": "^1.0.4",
     "react-transition-group": "^4.4.2",
     "sharp": "^0.24.1",
     "tailwindcss": "^1.9.6"

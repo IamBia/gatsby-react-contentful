@@ -1,9 +1,9 @@
 import React from "react"
 import AboutMe from "../components/home/aboutMe"
 import Hero from "../components/home/hero"
-import Stack from "../components/home/stack"
-// import Newsletter from "../components/home/newsletter"
 import Footer from "../components/footer"
+
+import Feed from "../components/home/feed"
 
 // import { injectIntl, FormattedMessage, FormattedHTMLMessage } from "gatsby-plugin-intl"
 
@@ -12,8 +12,7 @@ const IndexPage = ({ intl }) => {
     <div>
       <Hero />
       <AboutMe />
-      <Stack />
-      {/* <Newsletter/> */}
+      <Feed />
       <Footer />
     </div>
   )

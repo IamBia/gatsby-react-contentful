@@ -1,80 +1,75 @@
-.author{
-    font-size: 12px;
+.author {
+  font-size: 12px;
 }
 
+.blog-post {
+  border: 2px solid var(--main-blue);
+  padding: 20px;
+  border-radius: 5px;
+  h1 {
+    @include media-breakpoint-down(md) {
+      font-size: 2rem !important;
+    }
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-family: $primary-font;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  &:hover {
+    p {
+      color: #fff;
+    }
+  }
 
-.blog-post{
-    border: 2px solid var(--main-blue);;
-    padding: 20px;
-    border-radius: 5px;
-    h1{
-        @include media-breakpoint-down(md){
-            font-size: 2rem !important;
-        }
-    }
-    h2{
-        font-size: 1.8rem;
-        margin-bottom: 5px;
-        font-family: "Poppins", sans-serif;
-        margin-top: 50px;
-        margin-bottom: 5px;
-    }
-    &:hover{
-        p{
-            color: #fff;
-        }
-    }
-    
-    a{
-        text-decoration: underline !important;
-    }
-    
-    ul {
-        list-style-type: disc;
-        margin: 25px;
-    }
+  a {
+    text-decoration: underline !important;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin: 25px;
+  }
 }
 
-.blog{
-    h1{
-        font-size: 3.5rem;
-        margin-top: 40px;
-    }
-&--row{
-    &:first-of-type{
-        padding-top: 0;
+.blog {
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 40px;
+  }
+  &--row {
+    &:first-of-type {
+      padding-top: 0;
     }
     margin: 60px 0;
     padding: 60px 0;
-    @include media-breakpoint-down(md){
-        margin: 0;
+    @include media-breakpoint-down(md) {
+      margin: 0;
     }
-}
-    &__page{
-            img{
-                width: 100%;
-            }
-  
-         &--info{
-             display: flex;
-             flex-direction: column;
-             height: 100%;
-             min-height: 250px;
-             h2{
-                 font-size: 1.6rem;
-                 margin-bottom: 30px;
-             }
-
-             .neu-btn{
-                 max-width: 50%;
-                 @include media-breakpoint-down(sm){
-                     max-width: 100%;
-                 }
-             }
-         }   
+  }
+  &__page {
+    img {
+      width: 100%;
     }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-height: 250px;
+      h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+      }
+
+      .neu-btn {
+        max-width: 50%;
+        @include media-breakpoint-down(sm) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }
-
-
-
-
