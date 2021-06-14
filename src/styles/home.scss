@@ -61,7 +61,6 @@
       color: $grey;
       font-weight: 700;
       margin-top: -60px;
-      // margin-left: 150px;
       @include media-breakpoint-down(md) {
         font-size: 3.5rem;
         margin-top: -30px;
@@ -102,7 +101,7 @@
     }
   }
   &__photo {
-    background-image: url("../images/bia-2.jpg");
+    background-image: url(../images/bia-2.JPG); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -112,17 +111,6 @@
       margin: 60px 0;
     }
   }
-  // &__multiply-text{
-  //     color: rgba(255, 255, 255, 0.1) !important;
-  //     font-size: 7rem;
-  //     font-weight: 700;
-  //     @include media-breakpoint-down(md){
-  //         font-size: 3rem;
-  //         position: relative;
-  //         top: 0;
-  //         margin-left: 0px;
-  //     }
-  // }
   &__paragraph {
     margin-top: 30px;
     color: $grey;
@@ -156,10 +144,7 @@
 
 .stack {
     &--text {
-      // position: absolute;
       z-index: 2;
-      // top: 35%;
-      // padding-right: 130px;
       @include media-breakpoint-down(md) {
         padding-right: 0;
       }
@@ -175,9 +160,6 @@
       .front {
         color: $white;
       }
-      // .text-stack{
-      //     margin-left: 65px;
-      // }
     }
   
   &__skills {
