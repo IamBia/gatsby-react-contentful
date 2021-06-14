@@ -13,19 +13,19 @@
     padding-bottom: 50px;
 }
 
-.setup-image {
-    background-image: url("../images/setup.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    max-height: 100%;
+// .setup-image {
+//     // background-image: url("../images/setup.jpg"); 
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     height: 700px;
+//     max-height: 100%;
 
-    @include media-breakpoint-down(lg) {
-        height: 500px;
-        margin: 60px 0;
-      }
-}
+//     @include media-breakpoint-down(lg) {
+//         height: 500px;
+//         margin: 60px 0;
+//       }
+// }
 
 .setup{
      h2{

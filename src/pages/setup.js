@@ -12,7 +12,7 @@ const setup = ( ) => {
                 <div className="setup-image"></div>
             </div>
     
-        <div className="col-lg-10 mb-5">
+        <div className="col-lg-12 mb-5">
             <article className="setup d-flex flex-column">
             <h2>Laptop</h2>
             <p className="mt-2">Macbook Pro 16" (2019)</p>
