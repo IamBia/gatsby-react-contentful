@@ -18,10 +18,8 @@
     margin-top: 50px;
     margin-bottom: 5px;
   }
-  &:hover {
-    p {
-      color: #fff;
-    }
+  p {
+    color: $white;
   }
 
   a {
@@ -31,6 +29,15 @@
   ul {
     list-style-type: disc;
     margin: 25px;
+  }
+
+  .back-to-blog {
+    &:hover {
+      svg {
+        transform: translateX(-10px);
+        transition: ease-in-out all 0.3s;
+      }
+    }
   }
 }
 
@@ -65,9 +72,16 @@
       }
 
       .neu-btn {
-        max-width: 50%;
+        max-width: 75%;
         @include media-breakpoint-down(lg) {
           max-width: 100%;
+        }
+
+        &:hover {
+          svg {
+            transform: translateX(10px);
+            transition: ease-in-out all 0.3s;
+          }
         }
       }
     }

@@ -234,6 +234,27 @@
 
 .insta-feed {
   margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__follow {
+    color: $pink;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      svg { 
+          transform: translateX(10px);
+          transition: ease .3s;
+      }
+    }
+  }
 
   @include media-breakpoint-down(md) {
     margin: 30px 0;

@@ -41,7 +41,9 @@ const blog = ({ data }) => {
                   <p className="mb-3">{post.subtitle}</p>
 
                   <Link to={`/blog/${post.slug}/`} className="mt-auto">
-                    <div className="neu-btn">Read more</div>
+                    <div className="neu-btn">
+                      Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
                   </Link>
                 </div>
               </div>
