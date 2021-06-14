@@ -1,5 +1,4 @@
 import React from "react"
-import bia from "../../images/bia.png"
 import Stack from "../home/stack"
 
 // import { injectIntl, FormattedMessage, FormattedHTMLMessage } from "gatsby-plugin-intl"
@@ -16,10 +15,7 @@ const aboutMe = () => {
             data-sal-duration="2000"
             data-sal-delay="200"
             data-sal-easing="ease"
-          >
-         
-            {/* <img className="img-fluid" src={bia} alt="bianca"></img> */}
-          </div>
+          ></div>
         </div>
         <div className="col-lg-7">
           <h2
@@ -39,7 +35,7 @@ const aboutMe = () => {
               Front-end Developer
             </span>
           </h2>
-    
+
           <p
             className="about__paragraph"
             data-sal="slide-left"
@@ -54,11 +50,9 @@ const aboutMe = () => {
             in the projects I am involved with and make sure it is done with
             excellence and effectiveness.
           </p>
-          <Stack/>
+          <Stack />
         </div>
-  
       </div>
-    
     </div>
   )
 }

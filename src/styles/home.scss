@@ -155,40 +155,6 @@
 }
 
 .stack {
-  // background-image: url('../images/keyboard.png');
-  background-position: left bottom;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  @include media-breakpoint-down(md) {
-    background-position: center;
-  }
-  @include media-breakpoint-down(sm) {
-    background-position: 50% 85%;
-    background-size: 100%;
-  }
-
-  &__blob {
-    // position: relative;
-    @include media-breakpoint-down(md) {
-      top: -100px;
-    }
-    @include media-breakpoint-down(sm) {
-      top: -150px;
-    }
-    // svg{
-    //     display: none;
-    //     margin-left: -305px;
-    //     z-index: -1;
-
-    //     @include media-breakpoint-down(md){
-    //         margin-left: -250px;
-    //         width: 200%;
-    //     }
-    //     @include media-breakpoint-down(sm){
-    //         margin-left: -330px;
-    //     }
-
-    // }
     &--text {
       // position: absolute;
       z-index: 2;
@@ -213,7 +179,7 @@
       //     margin-left: 65px;
       // }
     }
-  }
+  
   &__skills {
     .grid {
       position: absolute;
@@ -231,7 +197,6 @@
     }
   }
 }
-
 .insta-feed {
   margin: 120px 0;
   display: flex;
