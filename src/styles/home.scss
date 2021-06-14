@@ -249,9 +249,9 @@
     align-items: center;
 
     &:hover {
-      svg { 
-          transform: translateX(10px);
-          transition: ease .3s;
+      svg {
+        transform: translateX(10px);
+        transition: ease 0.3s;
       }
     }
   }
