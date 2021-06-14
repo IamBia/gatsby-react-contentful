@@ -1,5 +1,4 @@
 import React from "react"
-import setupImg from "../images/setup.jpg"
 // import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 const setup = ( ) => {
@@ -10,10 +9,10 @@ const setup = ( ) => {
         <h1 className="mb-3 text-center">Setup</h1>
         <div className="row mb-3 justify-content-center" >
             <div className="col-lg-10">
-            <img src={setupImg} className="img-fluid mb-5"/>
+                <div className="setup-image"></div>
             </div>
     
-        <div className="col-lg-12 mb-5">
+        <div className="col-lg-10 mb-5">
             <article className="setup d-flex flex-column">
             <h2>Laptop</h2>
             <p className="mt-2">Macbook Pro 16" (2019)</p>
