@@ -38,7 +38,7 @@
         left: 30px;
       }
       @include media-breakpoint-down(md) {
-        top: 180px;
+        top: 40px;
       }
     }
   }
@@ -107,9 +107,9 @@
     background-size: cover;
     background-position: center;
     height: 450px;
-    @include media-breakpoint-down(md) {
-      height: 400px;
-      margin-bottom: 30px;
+    @include media-breakpoint-down(lg) {
+      height: 500px;
+      margin: 60px 0;
     }
   }
   // &__multiply-text{

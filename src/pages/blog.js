@@ -18,7 +18,7 @@ const blog = ({ data }) => {
         <div className="row">
           {postContent.map(({ node: post }) => (
             <div
-              className="col-lg-4"
+              className="col-md-6 col-lg-4"
               data-sal="slide-up"
               data-sal-duration="1000"
               data-sal-delay="100"

@@ -9,7 +9,7 @@ const aboutMe = () => {
   return (
     <div className="about py-0 pt-md-5 py-lg-0">
       <div className="row pt-5 pt-lg-0 mt-md-5">
-        <div className="col-md-5">
+        <div className="col-lg-5">
           <div
             className="about__photo d-flex justify-content-end"
             data-sal="slide-up"
@@ -21,7 +21,7 @@ const aboutMe = () => {
             {/* <img className="img-fluid" src={bia} alt="bianca"></img> */}
           </div>
         </div>
-        <div className="col-md-7">
+        <div className="col-lg-7">
           <h2
             data-sal="slide-left"
             data-sal-duration="1000"
