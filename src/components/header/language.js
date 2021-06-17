@@ -16,7 +16,7 @@ const languageClick = (e, language) => {
   const Language = () => {
 
     return(
-    <div className="language-switch d-flex align-items-center pt-md-2">
+    <div className="language-switch align-items-center pt-md-2">
       <IntlContextConsumer>
         {
         ({ languages, language: currentLocale }) =>

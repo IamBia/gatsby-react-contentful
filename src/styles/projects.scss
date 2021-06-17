@@ -1,20 +1,14 @@
-
-.portfolio{
-    height: 100%;
-    border-top: 1px solid; 
-    h2{
-        font-family: $primary-font;
-        font-size: 1.8rem;
-    }
-}
-
-.port:last-child{
-    border-bottom: 1px solid; 
-    padding-bottom: 50px;
+.portfolio {
+  height: 100%;
+  border-top: 1px solid;
+  h2 {
+    font-family: $primary-font;
+    font-size: 1.8rem;
+  }
 }
 
 // .setup-image {
-//     // background-image: url("../images/setup.jpg"); 
+//     // background-image: url("../images/setup.jpg");
 //     background-repeat: no-repeat;
 //     background-size: cover;
 //     background-position: center;
@@ -27,17 +21,16 @@
 //       }
 // }
 
-.setup{
-     h2{
+.setup {
+  h2 {
     font-family: $primary-font;
     font-size: 1.8rem;
-}
+  }
 }
 
-.neu_btn{
-    background-color: var(--main-dark);
-    max-width: 100%;
-    width: 100%;
-    padding: 10px 55px;
-
+.neu_btn {
+  background-color: var(--main-dark);
+  max-width: 100%;
+  width: 100%;
+  padding: 10px 55px;
 }

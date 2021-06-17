@@ -1,77 +1,75 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.footer{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h2{
-            @include media-breakpoint-down(sm){
-                font-size: 2.8rem;
-            }
-        }
-
-        ul{
-            list-style: none;
-            a{
-                color: #fff;
-                font-weight: 600;
-                &:hover{
-                    color: $pink;
-                }
-        }
-            }
-        }
+    h2 {
+      @include media-breakpoint-down(sm) {
+        font-size: 2.6rem;
+      }
     }
 
-
-@include media-breakpoint-down(sm){
-    footer{
-        height: 40vh;
+    ul {
+      list-style: none;
+      a {
+        color: #fff;
+        font-weight: 600;
+        &:hover {
+          color: $pink;
+        }
+      }
     }
+  }
 }
 
-footer{
-    ul{
-        li{
-            margin: 0 15px;
-            font-family: $secondary-font;
-            font-size: 3rem;
-            &:first-child{
-                margin-left: 0px;
-            }
-            &:last-child{
-                margin-left: 0px;
-            }
-            @include media-breakpoint-down(sm){
-                margin: 10px 10px 0 10px;
-                font-size: 2rem;
+@include media-breakpoint-down(sm) {
+  footer {
+    height: 40vh;
+  }
+}
 
-                &:first-child{
-                    margin-left: 0px;
-                }
-                &:last-child{
-                      margin-left: 0px;
-            }
+footer {
+  ul {
+    li {
+      margin: 0 15px;
+      font-family: $secondary-font;
+      font-size: 3rem;
+      &:first-child {
+        margin-left: 0px;
+      }
+      &:last-child {
+        margin-left: 0px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin: 10px 10px 0 10px;
+        font-size: 2rem;
+
+        &:first-child {
+          margin-left: 0px;
         }
+        &:last-child {
+          margin-left: 0px;
+        }
+      }
     }
-}
+  }
 }
 
-.credits{
-    font-size: 1rem;
+.credits {
+  font-size: 1rem;
 }
 
-.credits { 
-    a {
-    color: var(--main-pink);
-    @include media-breakpoint-down(sm){
-            font-size: 1rem;
+.credits {
+  a {
+    color: $pink;
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
     }
-    }
+  }
 }

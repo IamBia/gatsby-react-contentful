@@ -35,7 +35,7 @@ const Header = () => {
         </div>
         <div className="col-6">
           <div className="header__navigation d-flex justify-content-end">
-            <Language />
+            <Language/>
             <Burger click={openHandler} />
           </div>
         </div>
