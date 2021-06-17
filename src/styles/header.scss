@@ -112,6 +112,7 @@ li {
     }
   }
   .language-switch {
+    display: none;
     @include media-breakpoint-down(md) {
       display: flex;
       width: 100%;

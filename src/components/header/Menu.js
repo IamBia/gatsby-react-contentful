@@ -27,8 +27,7 @@ const Menu = props => {
               </div>
             </div>
             <div className="col-md-7">
-              <div className="d-flex">
-                {" "}
+              <div>
                 <Language />
               </div>
               <div className="menu__navigation">
